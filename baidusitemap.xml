@@ -4,23 +4,8 @@
 
     
   <url>
-    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
-    <lastmod>2017-04-23T15:40:45.062Z</lastmod>
-    <data>
-        <display>
-        <title>Github README</title>
-        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-04-23T15:37:31.488Z</lastmod>
+    <lastmod>2017-04-25T12:30:14.298Z</lastmod>
     <data>
         <display>
         <title>每日一句</title>
@@ -33,6 +18,43 @@
              
               <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2016/04/25/works/IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-04-25T12:22:09.042Z</lastmod>
+    <data>
+        <display>
+        <title>IE浏览器兼容性问题</title>
+        <pubTime>2016-04-25T10:31:07.000Z</pubTime>
+        
+        <tag>IE</tag>
+         
+        <tag>兼容性</tag>
+         
+         
+           
+             
+              <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
+    <lastmod>2017-04-23T15:40:45.062Z</lastmod>
+    <data>
+        <display>
+        <title>Github README</title>
+        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
