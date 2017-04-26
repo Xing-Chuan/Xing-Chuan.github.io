@@ -304,6 +304,181 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/04/26/linux/域名的选择与解析设置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/26/linux/域名的选择与解析设置/" itemprop="url">
+                  域名的选择与解析设置
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T18:44:21+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近又念想着换个域名, 搜索了半天域名, 发现都被注册掉了, 所以这想法就暂时流产了.</p>
+<p>静态博客并没有电子笔记那般便捷, 随想随编辑, 但我尽量记下自己的一些想法.</p>
+<h2 id="域名的分类"><a href="#域名的分类" class="headerlink" title="域名的分类"></a>域名的分类</h2><ul>
+<li>国内域名 .cn</li>
+<li>国际域名 .com .net .org .site</li>
+</ul>
+<h2 id="域名的选择"><a href="#域名的选择" class="headerlink" title="域名的选择"></a>域名的选择</h2><p>国内域名和服务器是有特殊环境的,<br>国内的域名和服务器都需要备案在册的,<br>不得所以随意更改, 如果哪天你的服务商倒闭了,<br>追回损失就是一件麻烦事.</p>
+<p>当然, 如果你上传了反动思想、少儿不宜的内容, 随时可能被查水表, :happy</p>
+<p>个人选择:<br>长期持有的话, 我觉得哪种都无所谓,<br>域名的作用只是为了让人们方便的访问,<br>而且各个服务商提供的域名续费费用每年都是差不多的, 首年特惠 8元/年的 .site, 可能续费比 .com的都贵</p>
+<p>企业选择:<br>商业型, 建议选 .com, 世界注册最多,辨识度高<br>非盈利组织/机构, 建议选 .org<br>机构/办事处, 建议选 .net</p>
+<p>投资选择:<br>建议不要在万网买, 转出很麻烦.<br>国内可以在易名, 爱名网注册, 国外可以在 goDaddy 注册</p>
+<p>PS: 建议注册国际域名, 不用备案, 比如在万网注册国际域名, 提交实名认证就好了, 可以在阿里云手机端用支付宝快捷实名认证, 很方便.</p>
+<h2 id="域名的解析设置"><a href="#域名的解析设置" class="headerlink" title="域名的解析设置"></a>域名的解析设置</h2><p>等你拿到域名了, 就需要设置域名解析了.</p>
+<p>解析可能有几种指向:</p>
+<ul>
+<li>一个免费的二级域名空间, 但是域名很长</li>
+<li>你持有的服务器 IP 地址</li>
+<li>提供邮箱服务的服务器 IP 地址</li>
+</ul>
+<p>几种常用的解析方式:</p>
+<p>解析方式有很多, 但是常用的就几种</p>
+<ul>
+<li>a 解析, 指向 IP 地址</li>
+</ul>
+<p>如果是自己持有的服务器, 直接设置 a 解析就可以了, 因为 IP 地址是不变的</p>
+<ul>
+<li>CNAME 解析, 指向域名地址</li>
+</ul>
+<p>如果是免费的二级域名, 需要用 CNAME 指向, 如果访问你指向的免费的二级域名也要跳转到你自己的域名,<br>请在网站根目录创建 CNAME 文件(大写, 无后缀名)</p>
+<ul>
+<li>MX 解析, 指向邮箱服务器地址</li>
+</ul>
+<p>一般都是不会自己搭建邮箱服务器的, 企业为了保密才需要, 个人的话我推荐使用阿里云企业邮箱, 或者腾讯企业邮箱就可以了.<br>注册企业邮箱账户的时候, 会给你两条 MX 指向的文本信息, 你设置到自己域名的解析里面就可以用了.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/04/21/dayily/REAMME/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -418,6 +593,11 @@
 </ul>
 <p>The shortest distance between two people is a smile. </p>
 <p>人与人之间最短的距离是微笑。</p>
+<ul>
+<li>2017-4-26 17:15:53</li>
+</ul>
+<p>Never regret. If it’s good, it’s wonderful. If it’s bad, it’s experience. </p>
+<p>不必遗憾。若是美好，叫做精彩。若是糟糕，叫做经历。</p>
 
           
         
@@ -538,7 +718,7 @@
       
         
           
-            <p>这里是我 Hexo 博客文章的源文件, 可以自由下载</p>
+            <p>这里是我博客文章的源文件, 可以自由下载</p>
 
           
         
@@ -1803,161 +1983,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/06/03/JavaScript/setTimeout的秘密/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/03/JavaScript/setTimeout的秘密/" itemprop="url">
-                  setTimeout的秘密
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-03T14:21:36+08:00">
-                2016-06-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>计时器setTimeout是我们经常会用到的，它用于在指定的毫秒数后调用函数或计算表达式。</p>
-<p>语法：</p>
-<blockquote>
-<p>setTimeout(code, millisec, args);</p>
-</blockquote>
-<p>注意：如果code为字符串，相当于执行eval()方法来执行code。</p>
-<p>当然，这一篇文章并不仅仅告诉你怎么用setTimeout，而且理解其是如何执行的。</p>
-<h3 id="1、setTimeout原理"><a href="#1、setTimeout原理" class="headerlink" title="1、setTimeout原理"></a>1、setTimeout原理</h3><p>先来看一段代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">varstart = newDate(); </div><div class="line"> </div><div class="line">varend = <span class="number">0</span>; </div><div class="line"> </div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </div><div class="line"> </div><div class="line"> <span class="built_in">console</span>.log(newDate() - start); </div><div class="line"> </div><div class="line">&#125;, <span class="number">500</span>); </div><div class="line"> </div><div class="line"><span class="keyword">while</span>(newDate() - start &lt;= <span class="number">1000</span>)&#123;&#125;</div></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/06/03/JavaScript/setTimeout的秘密/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2007,7 +2032,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2018,7 +2043,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -2029,7 +2054,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

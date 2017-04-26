@@ -4,8 +4,43 @@
 
     
   <url>
+    <loc>http://www.jixingchuan.com/2017/04/26/linux/%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E8%A7%A3%E6%9E%90%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2017-04-26T11:56:06.393Z</lastmod>
+    <data>
+        <display>
+        <title>域名的选择与解析设置</title>
+        <pubTime>2017-04-26T10:44:21.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://www.jixingchuan.com/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
+    <lastmod>2017-04-26T10:41:47.236Z</lastmod>
+    <data>
+        <display>
+        <title>Github README</title>
+        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-04-25T12:30:14.298Z</lastmod>
+    <lastmod>2017-04-26T09:16:00.904Z</lastmod>
     <data>
         <display>
         <title>每日一句</title>
@@ -40,21 +75,6 @@
              
               <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
-    <lastmod>2017-04-23T15:40:45.062Z</lastmod>
-    <data>
-        <display>
-        <title>Github README</title>
-        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
