@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
+    <lastmod>2017-04-27T03:10:07.856Z</lastmod>
+    <data>
+        <display>
+        <title>每日一句</title>
+        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
+        
+        <tag>外语</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2016/09/23/works/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2017-04-27T03:08:54.654Z</lastmod>
+    <data>
+        <display>
+        <title>前后端分离的发展过程</title>
+        <pubTime>2016-09-23T11:59:14.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+         
+           
+             
+              <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/04/26/computer/%E7%94%B5%E8%84%91%E5%90%AF%E5%8A%A8%E7%AF%87/</loc>
+    <lastmod>2017-04-27T03:00:17.451Z</lastmod>
+    <data>
+        <display>
+        <title>电脑启动篇</title>
+        <pubTime>2017-04-26T12:25:38.000Z</pubTime>
+        
+        <tag>电脑技巧</tag>
+         
+         
+           
+             
+              <breadCrumb title="电脑就该这么用" url="http://www.jixingchuan.com/categories/%E7%94%B5%E8%84%91%E5%B0%B1%E8%AF%A5%E8%BF%99%E4%B9%88%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jixingchuan.com/2017/04/26/linux/%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E8%A7%A3%E6%9E%90%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2017-04-26T11:56:06.393Z</lastmod>
     <data>
@@ -33,26 +93,6 @@
         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-04-26T09:16:00.904Z</lastmod>
-    <data>
-        <display>
-        <title>每日一句</title>
-        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
-        
-        <tag>外语</tag>
-         
-         
-           
-             
-              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
-          
         </display>
     </data>
     </url>
@@ -363,26 +403,6 @@
         <pubTime>2017-01-26T13:16:28.000Z</pubTime>
         
         <tag>SEO</tag>
-         
-         
-           
-             
-              <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jixingchuan.com/2016/01/23/works/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B/</loc>
-    <lastmod>2017-04-23T13:12:23.800Z</lastmod>
-    <data>
-        <display>
-        <title>前后端分离的发展过程</title>
-        <pubTime>2016-01-23T11:59:14.000Z</pubTime>
-        
-        <tag>works</tag>
          
          
            
