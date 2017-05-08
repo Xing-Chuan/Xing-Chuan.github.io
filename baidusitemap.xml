@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
+    <lastmod>2017-05-08T14:38:23.366Z</lastmod>
+    <data>
+        <display>
+        <title>每日一句</title>
+        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
+        
+        <tag>外语</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jixingchuan.com/2017/05/07/works/Web%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93-2017-05/</loc>
-    <lastmod>2017-05-07T15:34:46.638Z</lastmod>
+    <lastmod>2017-05-07T15:44:32.859Z</lastmod>
     <data>
         <display>
         <title>Web前端面试总结_2017.05</title>
@@ -19,26 +39,6 @@
            
              
               <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-05-07T14:33:00.730Z</lastmod>
-    <data>
-        <display>
-        <title>每日一句</title>
-        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
-        
-        <tag>外语</tag>
-         
-         
-           
-             
-              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
           
         </display>
     </data>

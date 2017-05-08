@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://www.jixingchuan.com/2017/05/07/works/Web前端面试总结-2017-05/index.html">
 <meta property="og:site_name" content="行川草庐">
 <meta property="og:description" content="面试告一段落, 把自己的面试体验整理一下, 给各位提供一下备战的思路. 声明: 以下皆是个人观点, 仅供参考之用. 简历投递前期为了解自身短板, 可以海投一些试试. 不建议长期海投简历,对用人单位简历筛选和你自身都没什么好处.投简历之前最起码要关注以下几点(薪资范围, 公司位置, 职位要求, 是否为培训机构冒充招聘). 前端职位类型现在前端招人分的挺细了, 下面是我印象中几种职位.  Web 前端">
-<meta property="og:updated_time" content="2017-05-07T15:34:46.638Z">
+<meta property="og:updated_time" content="2017-05-07T15:44:32.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web前端面试总结_2017.05">
 <meta name="twitter:description" content="面试告一段落, 把自己的面试体验整理一下, 给各位提供一下备战的思路. 声明: 以下皆是个人观点, 仅供参考之用. 简历投递前期为了解自身短板, 可以海投一些试试. 不建议长期海投简历,对用人单位简历筛选和你自身都没什么好处.投简历之前最起码要关注以下几点(薪资范围, 公司位置, 职位要求, 是否为培训机构冒充招聘). 前端职位类型现在前端招人分的挺细了, 下面是我印象中几种职位.  Web 前端">
@@ -426,10 +426,10 @@
 <li>你的简历, 技术栈、工作外学习情况、项目经验. 第一页很重要, 最好都能掌握, 有亮点更好.</li>
 <li>面试官额外的延展的知识点, 随机问,看你运气和积累(一般会提及到 ES6、解决实际问题的方法、数据结构与算法都有可能).</li>
 </ul>
-<h3 id="应对方案"><a href="#应对方案" class="headerlink" title="应对方案"></a>应对方案</h3><ul>
+<h3 id="应对"><a href="#应对" class="headerlink" title="应对"></a>应对</h3><ul>
 <li>刷题, 各种基础题会帮你快速回忆起来, 比你看书快, 如果基础不好的话, 看书好好学学吧.</li>
 <li>简历上自己写的东西, 要能说出来.</li>
-<li>积累, 每次面试不成功就回来填坑吧, 还是有掌握不到位的. 我觉得能坚持下来的话, 找到工作只是时间问题.</li>
+<li>积累, 每次面试不成功就回来填坑吧, 还是有掌握不到位的. 我觉得能坚持下来的话, 找工作只是时间问题.</li>
 </ul>
 <h2 id="面试着重点分类"><a href="#面试着重点分类" class="headerlink" title="面试着重点分类"></a>面试着重点分类</h2><p>根据公司业务不同, 着重点不一样, 公司能把你简历挑出来, 就说明有用人单位感兴趣的部分.</p>
 <ul>
@@ -449,6 +449,7 @@
 <li>盒子模型</li>
 <li>前端可以做哪些优化, 或问你 SEO, 基本都问.</li>
 <li>清除浮动方式和原理, 基本都问. 几种方式? 原理? 为什么要用伪元素? 具体代码怎么写,为什么这么写?</li>
+<li>清除浮动就会涉及到 BFC 的问题.</li>
 <li>给你实际页面例子, 让你口述布局或手写实现细节, 可以使用几种方法, 怎么写兼容性好, 拓展性好.</li>
 <li>具体 API 哪个 CSS 版本的?</li>
 <li>CSS3 新增了哪些 API?</li>
@@ -460,7 +461,9 @@
 <h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><ul>
 <li>变量声明提升的问题.</li>
 <li>闭包的原理, 闭包的各种题, 基本都问.</li>
+<li>DOM2 事件流, 冒泡和捕获问题?</li>
 <li>this 指向问题, 一般都是在笔试题里, 拿着问你, 问的比较多.</li>
+<li>call 和 apply 区别? 有的还会加问 bind?</li>
 <li>面向对象编程中的继承问题, 原型链问题在笔试题里比较常见.</li>
 <li>jQuery API , 各种操作 DOM 用法, 还有一些新的 API, 这种在不用 3 大框架的公司会问的很详细.</li>
 <li>可能有些考算法结构的, 可以了解一下, 一般前端掌握的很少.</li>
@@ -471,7 +474,7 @@
 <li>ES6 的 Promise , 很多都会问. 如果公司用框架或者你写了, 还会问你 Class.</li>
 <li>var, let, const区别, 问的多.</li>
 <li>栈和队列结构, 有的会问.</li>
-<li>跨域问题: 同源策略, 解决方案, 解决原理(这个一般只会问你 jsonp 的原理), 这里都是高发区.</li>
+<li>跨域问题: 同源策略, 解决方案, 解决原理(比如 jsonp 的原理), 这里都是高发区.</li>
 </ul>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
 <li>url 解析过程.</li>
@@ -704,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简历投递"><span class="nav-number">1.</span> <span class="nav-text">简历投递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端职位类型"><span class="nav-number">2.</span> <span class="nav-text">前端职位类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司类型"><span class="nav-number">3.</span> <span class="nav-text">公司类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试官考教流程"><span class="nav-number">4.</span> <span class="nav-text">面试官考教流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应对方案"><span class="nav-number">4.1.</span> <span class="nav-text">应对方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试着重点分类"><span class="nav-number">5.</span> <span class="nav-text">面试着重点分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架问题-Vue-举例-3框架实质问题差不多-具体有些差异"><span class="nav-number">5.1.</span> <span class="nav-text">框架问题: (Vue 举例, 3框架实质问题差不多, 具体有些差异)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5-CSS3"><span class="nav-number">5.2.</span> <span class="nav-text">HTML5 + CSS3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript"><span class="nav-number">5.3.</span> <span class="nav-text">JavaScript</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">5.4.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目"><span class="nav-number">5.5.</span> <span class="nav-text">项目</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简历投递"><span class="nav-number">1.</span> <span class="nav-text">简历投递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端职位类型"><span class="nav-number">2.</span> <span class="nav-text">前端职位类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司类型"><span class="nav-number">3.</span> <span class="nav-text">公司类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试官考教流程"><span class="nav-number">4.</span> <span class="nav-text">面试官考教流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应对"><span class="nav-number">4.1.</span> <span class="nav-text">应对</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试着重点分类"><span class="nav-number">5.</span> <span class="nav-text">面试着重点分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架问题-Vue-举例-3框架实质问题差不多-具体有些差异"><span class="nav-number">5.1.</span> <span class="nav-text">框架问题: (Vue 举例, 3框架实质问题差不多, 具体有些差异)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5-CSS3"><span class="nav-number">5.2.</span> <span class="nav-text">HTML5 + CSS3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript"><span class="nav-number">5.3.</span> <span class="nav-text">JavaScript</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">5.4.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目"><span class="nav-number">5.5.</span> <span class="nav-text">项目</span></a></li></ol></li></ol></div>
             
 
           </div>
