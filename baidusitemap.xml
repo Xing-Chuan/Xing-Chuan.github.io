@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-05-08T14:38:23.366Z</lastmod>
-    <data>
-        <display>
-        <title>每日一句</title>
-        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
-        
-        <tag>外语</tag>
-         
-         
-           
-             
-              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jixingchuan.com/2017/05/07/works/Web%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93-2017-05/</loc>
-    <lastmod>2017-05-07T15:44:32.859Z</lastmod>
+    <lastmod>2017-05-09T15:47:25.093Z</lastmod>
     <data>
         <display>
         <title>Web前端面试总结_2017.05</title>
@@ -39,6 +19,63 @@
            
              
               <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/05/09/works/nodetpl%E6%A8%A1%E7%89%88%E5%BC%95%E6%93%8E%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2017-05-09T15:42:42.980Z</lastmod>
+    <data>
+        <display>
+        <title>nodetpl模版引擎使用</title>
+        <pubTime>2017-05-09T14:23:46.000Z</pubTime>
+        
+        <tag>模版引擎</tag>
+         
+        <tag>nodetpl</tag>
+         
+         
+           
+             
+              <breadCrumb title="works" url="http://www.jixingchuan.com/categories/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
+    <lastmod>2017-05-09T15:09:42.744Z</lastmod>
+    <data>
+        <display>
+        <title>Github README</title>
+        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
+    <lastmod>2017-05-09T14:11:57.270Z</lastmod>
+    <data>
+        <display>
+        <title>每日一句</title>
+        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
+        
+        <tag>外语</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
           
         </display>
     </data>
@@ -148,21 +185,6 @@
              
               <breadCrumb title="JavaScript" url="http://www.jixingchuan.com/categories/JavaScript/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
-    <lastmod>2017-05-02T14:54:27.788Z</lastmod>
-    <data>
-        <display>
-        <title>Github README</title>
-        <pubTime>2017-04-18T15:39:06.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
