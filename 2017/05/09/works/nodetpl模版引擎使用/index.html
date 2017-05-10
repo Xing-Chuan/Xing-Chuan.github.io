@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="nodetpl API nodetpl.config 基本配置, 一般使用默认 nodetpl.get 获取模版或者编译后的模版文件 nodetpl.render 渲染某个文件 nodetpl.exec 执行模版里面的 js 代码  API 参数 nodetpl.config(options)  123456789101112131415nodetpl.config(&amp;#123;  base: &apos;">
+<meta name="description" content="起步 Demo引入文件 script 标签引入  1&amp;lt;script src=&quot;./js/nodetpl.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  require 模块化引入  1var nodetpl = require(&apos;nodetpl&apos;); 创建模版创建 tpl/test.tpl 123456&amp;lt;h1&amp;gt;&amp;lt;?=@title?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt">
 <meta name="keywords" content="模版引擎,nodetpl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nodetpl模版引擎使用">
 <meta property="og:url" content="http://www.jixingchuan.com/2017/05/09/works/nodetpl模版引擎使用/index.html">
 <meta property="og:site_name" content="行川草庐">
-<meta property="og:description" content="nodetpl API nodetpl.config 基本配置, 一般使用默认 nodetpl.get 获取模版或者编译后的模版文件 nodetpl.render 渲染某个文件 nodetpl.exec 执行模版里面的 js 代码  API 参数 nodetpl.config(options)  123456789101112131415nodetpl.config(&amp;#123;  base: &apos;">
-<meta property="og:updated_time" content="2017-05-09T15:42:42.980Z">
+<meta property="og:description" content="起步 Demo引入文件 script 标签引入  1&amp;lt;script src=&quot;./js/nodetpl.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  require 模块化引入  1var nodetpl = require(&apos;nodetpl&apos;); 创建模版创建 tpl/test.tpl 123456&amp;lt;h1&amp;gt;&amp;lt;?=@title?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt">
+<meta property="og:updated_time" content="2017-05-10T03:23:56.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nodetpl模版引擎使用">
-<meta name="twitter:description" content="nodetpl API nodetpl.config 基本配置, 一般使用默认 nodetpl.get 获取模版或者编译后的模版文件 nodetpl.render 渲染某个文件 nodetpl.exec 执行模版里面的 js 代码  API 参数 nodetpl.config(options)  123456789101112131415nodetpl.config(&amp;#123;  base: &apos;">
+<meta name="twitter:description" content="起步 Demo引入文件 script 标签引入  1&amp;lt;script src=&quot;./js/nodetpl.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  require 模块化引入  1var nodetpl = require(&apos;nodetpl&apos;); 创建模版创建 tpl/test.tpl 123456&amp;lt;h1&amp;gt;&amp;lt;?=@title?&amp;gt;&amp;lt;/h1&amp;gt;&amp;lt">
 
 
 
@@ -398,7 +398,41 @@
       
 
       
-        <h2 id="nodetpl-API"><a href="#nodetpl-API" class="headerlink" title="nodetpl API"></a>nodetpl API</h2><ul>
+        <h2 id="起步-Demo"><a href="#起步-Demo" class="headerlink" title="起步 Demo"></a>起步 Demo</h2><h3 id="引入文件"><a href="#引入文件" class="headerlink" title="引入文件"></a>引入文件</h3><ul>
+<li>script 标签引入</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/nodetpl.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>require 模块化引入</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> nodetpl = <span class="built_in">require</span>(<span class="string">'nodetpl'</span>);</div></pre></td></tr></table></figure>
+<h3 id="创建模版"><a href="#创建模版" class="headerlink" title="创建模版"></a>创建模版</h3><p>创建 <code>tpl/test.tpl</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&lt;?=@title?&gt;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  &lt;?for (var i=0; i&lt;@favor.length); i++?) &#123;&gt;</div><div class="line">    &lt;li&gt;&lt;?=@favor[i]?&gt;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  &lt;?&#125;?&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h3><p>nodetpl.get 与 nodetpl.render 需要使用 Nginx 或 Apache 代理.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">  <span class="string">"title"</span>: <span class="string">"个人爱好"</span>,</div><div class="line">  <span class="string">"favor"</span>: [<span class="string">"足球"</span>, <span class="string">"篮球"</span>, <span class="string">"乒乓球"</span>, <span class="string">"琉璃球"</span>]</div><div class="line">&#125;;</div><div class="line">nodetpl.get(<span class="string">'tpls/test.tpl'</span>, data, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(d);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="执行结果"><a href="#执行结果" class="headerlink" title="执行结果"></a>执行结果</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>个人爱好<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>足球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>篮球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>乒乓球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>琉璃球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="nodetpl-关键字"><a href="#nodetpl-关键字" class="headerlink" title="nodetpl 关键字"></a>nodetpl 关键字</h2><ul>
+<li>&lt;? ?&gt; nodetp 定界符</li>
+<li>$ROOT 模版中 HTML 代码需要包裹在 id 为 $ROOT 的元素中</li>
+<li>ROOT 在 script 标签中使用, 相当于 document.getElementById(‘$ROOT’)</li>
+<li>$SUBROOT 多模版, 子模版 HTML 用 id 为 $SUBROOT 的元素包裹</li>
+<li>SUBROOT 多模版, 在子模版 script 标签内使用.</li>
+<li>$DATA 传入模版中的数据挂载在 $DATA 下</li>
+<li>= 纯文本渲染, 放 XSS</li>
+<li>== HTML, JS 代码会实际渲染</li>
+<li>include 引入 tpl 模版</li>
+<li>template 多模版, 单模版用 template包裹</li>
+<li>main 多模版, 主模版需设置 name=”main”</li>
+<li>nodetpl.config 配置</li>
+<li>nodetpl.get 渲染, 可指定 url</li>
+<li>nodetpl.render 渲染模版代码, 一般手动拼接</li>
+<li>nodetpl.exec 执行模版中的 js 代码</li>
+<li>–extname 拓展名, 默认 .tpl</li>
+<li>–encoding 预编译指定编码</li>
+<li>–watch 预编译实时监视</li>
+<li>–nostrict 预编译不使用严格模式</li>
+</ul>
+<h2 id="nodetpl-API"><a href="#nodetpl-API" class="headerlink" title="nodetpl API"></a>nodetpl API</h2><ul>
 <li>nodetpl.config 基本配置, 一般使用默认</li>
 <li>nodetpl.get 获取模版或者编译后的模版文件</li>
 <li>nodetpl.render 渲染某个文件</li>
@@ -665,7 +699,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#nodetpl-API"><span class="nav-number">1.</span> <span class="nav-text">nodetpl API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#API-参数"><span class="nav-number">1.1.</span> <span class="nav-text">API 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodetpl-预编译"><span class="nav-number">2.</span> <span class="nav-text">nodetpl 预编译</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#起步-Demo"><span class="nav-number">1.</span> <span class="nav-text">起步 Demo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#引入文件"><span class="nav-number">1.1.</span> <span class="nav-text">引入文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模版"><span class="nav-number">1.2.</span> <span class="nav-text">创建模版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#渲染"><span class="nav-number">1.3.</span> <span class="nav-text">渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行结果"><span class="nav-number">1.4.</span> <span class="nav-text">执行结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodetpl-关键字"><span class="nav-number">2.</span> <span class="nav-text">nodetpl 关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodetpl-API"><span class="nav-number">3.</span> <span class="nav-text">nodetpl API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#API-参数"><span class="nav-number">3.1.</span> <span class="nav-text">API 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodetpl-预编译"><span class="nav-number">4.</span> <span class="nav-text">nodetpl 预编译</span></a></li></ol></div>
             
 
           </div>
