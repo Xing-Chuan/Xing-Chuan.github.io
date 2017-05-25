@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
-    <lastmod>2017-05-14T12:15:16.136Z</lastmod>
-    <data>
-        <display>
-        <title>每日一句</title>
-        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
-        
-        <tag>外语</tag>
-         
-         
-           
-             
-              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jixingchuan.com/2017/05/07/works/Web%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93-2017-05/</loc>
-    <lastmod>2017-05-14T09:43:59.314Z</lastmod>
+    <lastmod>2017-05-17T13:58:02.000Z</lastmod>
     <data>
         <display>
         <title>Web前端面试总结_2017.05</title>
@@ -46,8 +26,28 @@
 
     
   <url>
+    <loc>http://www.jixingchuan.com/2017/04/21/dayily/REAMME/</loc>
+    <lastmod>2017-05-14T12:15:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>每日一句</title>
+        <pubTime>2017-04-21T04:55:36.000Z</pubTime>
+        
+        <tag>外语</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日一句" url="http://www.jixingchuan.com/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jixingchuan.com/2017/05/12/works/SVN%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2017-05-12T08:04:25.475Z</lastmod>
+    <lastmod>2017-05-12T08:04:26.000Z</lastmod>
     <data>
         <display>
         <title>SVN基础使用教程</title>
@@ -67,7 +67,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/04/18/README/</loc>
-    <lastmod>2017-05-11T08:59:33.742Z</lastmod>
+    <lastmod>2017-05-11T08:59:34.000Z</lastmod>
     <data>
         <display>
         <title>Github README</title>
@@ -82,7 +82,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/05/09/works/nodetpl%E6%A8%A1%E7%89%88%E5%BC%95%E6%93%8E%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2017-05-10T03:31:48.612Z</lastmod>
+    <lastmod>2017-05-10T03:31:50.000Z</lastmod>
     <data>
         <display>
         <title>nodetpl模版引擎使用</title>
@@ -104,7 +104,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/08/04/HTML&CSS/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2017-05-06T13:49:54.716Z</lastmod>
+    <lastmod>2017-05-06T13:49:56.000Z</lastmod>
     <data>
         <display>
         <title>清除浮动的几种方法</title>
@@ -124,7 +124,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/03/03/JavaScript/%E6%A8%A1%E5%9D%97%E5%8C%96%E3%80%81AMD%E3%80%81CMD%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-05-03T15:28:32.027Z</lastmod>
+    <lastmod>2017-05-03T15:28:34.000Z</lastmod>
     <data>
         <display>
         <title>模块化、AMD、CMD的区别</title>
@@ -146,7 +146,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/08/03/JavaScript/js%E6%A8%A1%E6%8B%9F%E5%A0%86%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2017-05-03T13:55:52.798Z</lastmod>
+    <lastmod>2017-05-03T13:55:54.000Z</lastmod>
     <data>
         <display>
         <title>JS模拟堆栈和队列操作</title>
@@ -168,7 +168,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/05/02/works/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BAmock-server%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-05-02T14:58:07.398Z</lastmod>
+    <lastmod>2017-05-02T14:58:08.000Z</lastmod>
     <data>
         <display>
         <title>前端构建mock-server的几种方式</title>
@@ -188,7 +188,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/05/02/JavaScript/nodeName%E3%80%81nodeType%E5%92%8CnodeValue%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-05-02T14:58:06.016Z</lastmod>
+    <lastmod>2017-05-02T14:58:08.000Z</lastmod>
     <data>
         <display>
         <title>nodeName、nodeType和nodeValue的区别</title>
@@ -212,7 +212,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/10/02/JavaScript/%E4%BA%8B%E4%BB%B6%E6%B7%BB%E5%8A%A0%E3%80%81%E5%88%A0%E9%99%A4-%E9%98%BB%E6%AD%A2%E5%86%92%E6%B3%A1%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E8%A1%8C%E4%B8%BA%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%86%99%E6%B3%95/</loc>
-    <lastmod>2017-05-02T14:34:04.141Z</lastmod>
+    <lastmod>2017-05-02T14:34:06.000Z</lastmod>
     <data>
         <display>
         <title>事件添加、删除,阻止冒泡和浏览器默认行为的兼容性写法</title>
@@ -236,7 +236,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/05/02/JavaScript/JS%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98%E7%9A%84%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2017-05-02T13:52:09.674Z</lastmod>
+    <lastmod>2017-05-02T13:52:10.000Z</lastmod>
     <data>
         <display>
         <title>JS事件的三个阶段与事件委托的原理</title>
@@ -258,7 +258,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/04/26/linux/%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E8%A7%A3%E6%9E%90%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2017-05-01T14:15:43.866Z</lastmod>
+    <lastmod>2017-05-01T14:15:44.000Z</lastmod>
     <data>
         <display>
         <title>域名的选择与解析设置</title>
@@ -278,7 +278,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/05/01/JavaScript/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E8%A1%A8/</loc>
-    <lastmod>2017-05-01T14:12:05.110Z</lastmod>
+    <lastmod>2017-05-01T14:12:06.000Z</lastmod>
     <data>
         <display>
         <title>正则表达式匹配表</title>
@@ -298,7 +298,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/02/01/computer/PC%E7%AB%AF%E5%AE%9E%E7%8E%B0%E5%9C%A8%E7%BA%BF%E7%9C%8B%E7%BE%8E%E5%89%A7%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2017-05-01T07:41:34.203Z</lastmod>
+    <lastmod>2017-05-01T07:41:36.000Z</lastmod>
     <data>
         <display>
         <title>PC端实现在线看美剧的方法</title>
@@ -318,7 +318,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/02/04/experiences/%E6%80%8E%E4%B9%88%E5%A4%8D%E5%88%B6Window%E4%B8%ADCMD%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%86%85%E5%AE%B9/</loc>
-    <lastmod>2017-05-01T03:19:40.556Z</lastmod>
+    <lastmod>2017-05-01T03:19:42.000Z</lastmod>
     <data>
         <display>
         <title>怎么复制Window中CMD命令行中的内容</title>
@@ -338,7 +338,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/05/04/experiences/%E8%A7%A3%E5%86%B3%E8%B0%B7%E6%AD%8C%E8%B4%A6%E6%88%B7%E6%B3%A8%E5%86%8C%E6%89%8B%E6%9C%BA%E5%8F%B7%E6%97%A0%E6%B3%95%E9%87%8D%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-05-01T03:19:36.963Z</lastmod>
+    <lastmod>2017-05-01T03:19:38.000Z</lastmod>
     <data>
         <display>
         <title>解决谷歌账户注册手机号无法重用的问题</title>
@@ -358,7 +358,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/07/02/experiences/Apple%20ID%E6%9B%B4%E6%8D%A2%E4%B8%BB%E6%98%BE%E9%82%AE%E7%AE%B1%E5%90%8E%E4%B8%8D%E8%83%BD%E6%B3%A8%E9%94%80iCloud%E8%B4%A6%E5%8F%B7/</loc>
-    <lastmod>2017-05-01T03:19:32.633Z</lastmod>
+    <lastmod>2017-05-01T03:19:34.000Z</lastmod>
     <data>
         <display>
         <title>Apple ID更换主显邮箱后不能注销iCloud账号</title>
@@ -380,7 +380,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/06/10/JavaScript/Harmony(ES3.1%E6%94%B9%E7%89%88)%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2017-05-01T03:18:25.647Z</lastmod>
+    <lastmod>2017-05-01T03:18:26.000Z</lastmod>
     <data>
         <display>
         <title>Harmony(ES3.1改版)学习总结</title>
@@ -402,7 +402,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/04/29/computer/Chrome%E6%8F%92%E4%BB%B6-Vimium(%E9%94%AE%E7%9B%98%E6%9B%BF%E4%BB%A3%E9%BC%A0%E6%A0%87%E6%93%8D%E4%BD%9C)/</loc>
-    <lastmod>2017-05-01T03:10:39.456Z</lastmod>
+    <lastmod>2017-05-01T03:10:40.000Z</lastmod>
     <data>
         <display>
         <title>Chrome插件-Vimium(键盘替代鼠标操作)</title>
@@ -422,7 +422,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/05/01/computer/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%8F%AF%E4%BB%A5%E4%B8%8B%E8%BD%BDChrome%E6%8F%92%E4%BB%B6%E7%9A%84%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2017-05-01T03:10:11.360Z</lastmod>
+    <lastmod>2017-05-01T03:10:12.000Z</lastmod>
     <data>
         <display>
         <title>推荐一个可以下载Chrome插件的网站</title>
@@ -442,7 +442,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/04/30/JavaScript/JavaScript%E4%B9%8B%E8%AF%8D%E6%B3%95%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E5%8A%A8%E6%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
-    <lastmod>2017-04-30T03:43:27.520Z</lastmod>
+    <lastmod>2017-04-30T03:43:28.000Z</lastmod>
     <data>
         <display>
         <title>JavaScript之词法作用域和动态作用域</title>
@@ -462,7 +462,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/04/29/JavaScript/JavaScript%E4%B9%8B%E9%97%AD%E5%8C%85/</loc>
-    <lastmod>2017-04-29T15:48:55.883Z</lastmod>
+    <lastmod>2017-04-29T15:48:56.000Z</lastmod>
     <data>
         <display>
         <title>JavaScript之闭包</title>
@@ -482,7 +482,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/04/04/works/Javascript%E4%BB%A3%E7%A0%81%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-Airbnb/</loc>
-    <lastmod>2017-04-27T12:24:01.889Z</lastmod>
+    <lastmod>2017-04-27T12:24:02.000Z</lastmod>
     <data>
         <display>
         <title>Javascript代码编程规范-Airbnb</title>
@@ -502,7 +502,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/09/23/works/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B/</loc>
-    <lastmod>2017-04-27T03:08:54.654Z</lastmod>
+    <lastmod>2017-04-27T03:08:56.000Z</lastmod>
     <data>
         <display>
         <title>前后端分离的发展过程</title>
@@ -522,7 +522,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/04/26/computer/%E7%94%B5%E8%84%91%E5%90%AF%E5%8A%A8%E7%AF%87/</loc>
-    <lastmod>2017-04-27T03:00:17.451Z</lastmod>
+    <lastmod>2017-04-27T03:00:18.000Z</lastmod>
     <data>
         <display>
         <title>电脑启动篇</title>
@@ -542,7 +542,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/04/25/works/IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2017-04-25T12:22:09.042Z</lastmod>
+    <lastmod>2017-04-25T12:22:10.000Z</lastmod>
     <data>
         <display>
         <title>IE浏览器兼容性问题</title>
@@ -564,7 +564,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/08/07/mobile/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E4%B9%8Bviewport/</loc>
-    <lastmod>2017-04-23T15:22:42.273Z</lastmod>
+    <lastmod>2017-04-23T15:22:44.000Z</lastmod>
     <data>
         <display>
         <title>移动web开发之viewport</title>
@@ -584,7 +584,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/02/13/HTML&CSS/font-size%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</loc>
-    <lastmod>2017-04-23T15:21:44.676Z</lastmod>
+    <lastmod>2017-04-23T15:21:46.000Z</lastmod>
     <data>
         <display>
         <title>rem布局 body元素font-size初始化的必要性</title>
@@ -606,7 +606,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/06/03/JavaScript/setTimeout%E7%9A%84%E7%A7%98%E5%AF%86/</loc>
-    <lastmod>2017-04-23T15:20:31.064Z</lastmod>
+    <lastmod>2017-04-23T15:20:32.000Z</lastmod>
     <data>
         <display>
         <title>setTimeout的秘密</title>
@@ -628,7 +628,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/01/04/JavaScript/ES6%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2017-04-23T15:19:16.021Z</lastmod>
+    <lastmod>2017-04-23T15:19:18.000Z</lastmod>
     <data>
         <display>
         <title>ES6常用语法</title>
@@ -650,7 +650,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/03/02/JavaScript/JavaScript-%E6%B7%B1%E5%A4%8D%E5%88%B6%E4%B8%8E%E6%B5%85%E5%A4%8D%E5%88%B6%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-04-23T15:12:10.959Z</lastmod>
+    <lastmod>2017-04-23T15:12:12.000Z</lastmod>
     <data>
         <display>
         <title>深复制与浅复制的区别</title>
@@ -670,7 +670,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/03/03/JavaScript/JavaScript-%E5%85%A8%E5%B1%80%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%AD%E5%8F%98%E9%87%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%90%8D%E5%86%B2%E7%AA%81%E6%97%B6%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</loc>
-    <lastmod>2017-04-23T15:11:31.540Z</lastmod>
+    <lastmod>2017-04-23T15:11:32.000Z</lastmod>
     <data>
         <display>
         <title>全局作用域中变量和函数名冲突时的优先级</title>
@@ -692,7 +692,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/03/06/tools/Git%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2017-04-23T15:10:37.648Z</lastmod>
+    <lastmod>2017-04-23T15:10:38.000Z</lastmod>
     <data>
         <display>
         <title>Git安装及使用</title>
@@ -712,7 +712,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2016/04/29/tools/bower%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2017-04-23T15:08:53.541Z</lastmod>
+    <lastmod>2017-04-23T15:08:54.000Z</lastmod>
     <data>
         <display>
         <title>bower基本使用</title>
@@ -734,7 +734,7 @@
     
   <url>
     <loc>http://www.jixingchuan.com/2017/01/26/works/%E5%89%8D%E7%AB%AF%E5%8F%AF%E4%BB%A5%E5%81%9A%E5%93%AA%E4%BA%9B%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2017-04-23T15:00:50.357Z</lastmod>
+    <lastmod>2017-04-23T15:00:52.000Z</lastmod>
     <data>
         <display>
         <title>前端可以做哪些优化</title>
