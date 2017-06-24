@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="电脑技巧," />
+  <meta name="keywords" content="编码," />
 
 
 
@@ -87,19 +87,17 @@
 
 
 
-<meta name="description" content="折腾电脑好多年, 最喜欢的就是装各种软件.是时候分享一下自己觉得好用的软件了, 都是干货. 电脑环境: Window 7 64bit 还没有机会用 MAC 本, 所以暂时推荐的都是 window 下的软件,目前也是国内最大众的电脑系统, 这几年 Linux 也是挺火的呢 喜欢装软件的, 或者不注意保养自己电脑的人, 一般都会被开机加载一堆软件所困扰.博主固态 SSD 也 Hold 不住. Quic">
-<meta name="keywords" content="电脑技巧">
+<meta name="description" content="URL是统一命名的网络资源, 是为了支持网络所有协议使用而诞生的. 需要满足以下 3 个特点:  移植性 (支持各种网络协议) 完整性 (不会丢失数据) 阅读性 (语义化结构)  为了满足以上特点, 设计者引入了转义序列, 以 ACSII 的有限子集转换对任意数据和字符进行编码, 如此的话, 只要支持 ACSII 码的设备都可以根据映射表来使用. JavaScript 中进行编码和解码工作的是 e">
+<meta name="keywords" content="编码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="电脑启动篇">
-<meta property="og:url" content="http://www.jixingchuan.com/2017/04/26/computer/电脑启动篇/index.html">
+<meta property="og:title" content="encodeURI和encodeURIComponent">
+<meta property="og:url" content="http://www.jixingchuan.com/2017/06/22/JavaScript/encodeURI和encodeURIComponent/index.html">
 <meta property="og:site_name" content="行川草庐">
-<meta property="og:description" content="折腾电脑好多年, 最喜欢的就是装各种软件.是时候分享一下自己觉得好用的软件了, 都是干货. 电脑环境: Window 7 64bit 还没有机会用 MAC 本, 所以暂时推荐的都是 window 下的软件,目前也是国内最大众的电脑系统, 这几年 Linux 也是挺火的呢 喜欢装软件的, 或者不注意保养自己电脑的人, 一般都会被开机加载一堆软件所困扰.博主固态 SSD 也 Hold 不住. Quic">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4434201-752ffe171a4a6da3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-04-27T03:00:18.000Z">
+<meta property="og:description" content="URL是统一命名的网络资源, 是为了支持网络所有协议使用而诞生的. 需要满足以下 3 个特点:  移植性 (支持各种网络协议) 完整性 (不会丢失数据) 阅读性 (语义化结构)  为了满足以上特点, 设计者引入了转义序列, 以 ACSII 的有限子集转换对任意数据和字符进行编码, 如此的话, 只要支持 ACSII 码的设备都可以根据映射表来使用. JavaScript 中进行编码和解码工作的是 e">
+<meta property="og:updated_time" content="2017-06-22T09:57:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="电脑启动篇">
-<meta name="twitter:description" content="折腾电脑好多年, 最喜欢的就是装各种软件.是时候分享一下自己觉得好用的软件了, 都是干货. 电脑环境: Window 7 64bit 还没有机会用 MAC 本, 所以暂时推荐的都是 window 下的软件,目前也是国内最大众的电脑系统, 这几年 Linux 也是挺火的呢 喜欢装软件的, 或者不注意保养自己电脑的人, 一般都会被开机加载一堆软件所困扰.博主固态 SSD 也 Hold 不住. Quic">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/4434201-752ffe171a4a6da3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="encodeURI和encodeURIComponent">
+<meta name="twitter:description" content="URL是统一命名的网络资源, 是为了支持网络所有协议使用而诞生的. 需要满足以下 3 个特点:  移植性 (支持各种网络协议) 完整性 (不会丢失数据) 阅读性 (语义化结构)  为了满足以上特点, 设计者引入了转义序列, 以 ACSII 的有限子集转换对任意数据和字符进行编码, 如此的话, 只要支持 ACSII 码的设备都可以根据映射表来使用. JavaScript 中进行编码和解码工作的是 e">
 
 
 
@@ -127,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://www.jixingchuan.com/2017/04/26/computer/电脑启动篇/"/>
+  <link rel="canonical" href="http://www.jixingchuan.com/2017/06/22/JavaScript/encodeURI和encodeURIComponent/"/>
 
 
 
 
 
-  <title> 电脑启动篇 | 行川草庐 </title>
+  <title> encodeURI和encodeURIComponent | 行川草庐 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -306,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/04/26/computer/电脑启动篇/">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/06/22/JavaScript/encodeURI和encodeURIComponent/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="纪行川">
@@ -327,7 +325,7 @@
             
             
               
-                电脑启动篇
+                encodeURI和encodeURIComponent
               
             
           </h2>
@@ -342,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T20:25:38+08:00">
-                2017-04-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T15:45:35+08:00">
+                2017-06-22
               </time>
             
 
@@ -365,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/电脑就该这么用/" itemprop="url" rel="index">
-                    <span itemprop="name">电脑就该这么用</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -400,15 +398,42 @@
       
 
       
-        <p>折腾电脑好多年, 最喜欢的就是装各种软件.<br>是时候分享一下自己觉得好用的软件了, 都是干货.</p>
-<p>电脑环境: Window 7 64bit</p>
-<p>还没有机会用 MAC 本, 所以暂时推荐的都是 window 下的软件,<br>目前也是国内最大众的电脑系统, 这几年 Linux 也是挺火的呢</p>
-<p>喜欢装软件的, 或者不注意保养自己电脑的人, 一般都会被开机加载一堆软件所困扰.<br>博主固态 SSD 也 Hold 不住.</p>
-<h3 id="Quick-Startup"><a href="#Quick-Startup" class="headerlink" title="Quick Startup"></a>Quick Startup</h3><p>下面这是界面样式:</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/4434201-752ffe171a4a6da3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<p>可以自定义延时执行时间, 把不需要立即使用的都放到后面执行,<br>这样电脑就不会开机卡几分钟之后才能用了.</p>
-<p>不需要的启动项直接禁用或删除, 这点一般的管理软件也都有提供.</p>
-<p>这款软件特点就是可以自定义软件延时执行的时间.</p>
+        <p>URL是统一命名的网络资源, 是为了支持网络所有协议使用而诞生的.</p>
+<p>需要满足以下 3 个特点:</p>
+<ul>
+<li>移植性 (支持各种网络协议)</li>
+<li>完整性 (不会丢失数据)</li>
+<li>阅读性 (语义化结构)</li>
+</ul>
+<p>为了满足以上特点, 设计者引入了转义序列, 以 ACSII 的有限子集转换对任意数据和字符进行编码, 如此的话, 只要支持 ACSII 码的设备都可以根据映射表来使用.</p>
+<p>JavaScript 中进行编码和解码工作的是 encodeURI/decodeURI 和 encodeURIComponent/decodeURIComponent</p>
+<h3 id="encodeURI-decodeURI"><a href="#encodeURI-decodeURI" class="headerlink" title="encodeURI/decodeURI"></a>encodeURI/decodeURI</h3><p>语法:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">encodeURI(URIString);</div></pre></td></tr></table></figure>
+<p>返回值:</p>
+<p>返回以转义序列替换的 URISting 副本</p>
+<p>说明:</p>
+<p>该方法不会替换 ACSII 中的字母和数字, 也不会替换 ACSII 的标点符号 <code>- _ . ! ~ * &#39; ( )</code></p>
+<p>编码效果展示:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(<span class="string">"http://www.w3school.com.cn"</span>)+ <span class="string">"&lt;br /&gt;"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(<span class="string">"http://www.w3school.com.cn/My first/"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(<span class="string">",/?:@&amp;=+$#"</span>));</div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">http://www.w3school.com.cn</div><div class="line">http://www.w3school.com.cn/My%20first/</div><div class="line">,/?:@&amp;=+$#</div></pre></td></tr></table></figure>
+<p>解码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decodeURI</div></pre></td></tr></table></figure>
+<h3 id="encodeURIComponent-decodeURIComponent"><a href="#encodeURIComponent-decodeURIComponent" class="headerlink" title="encodeURIComponent/decodeURIComponent"></a>encodeURIComponent/decodeURIComponent</h3><p>语法:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">encodeURIComponent(URIstring)</div></pre></td></tr></table></figure>
+<p>返回值:</p>
+<p>返回以转义序列替换的 URISting 副本</p>
+<p>说明:</p>
+<p>该方法不会替换 ACSII 中的字母和数字, 也不会替换 ACSII 的标点符号 <code>- _ . ! ~ * &#39; ( )</code>.</p>
+<p><code>;/?:@&amp;=+$,#</code> 这些用于分割 URL 的标点符号, 会被转义.</p>
+<p>编码效果展示:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(<span class="string">"http://www.w3school.com.cn"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(<span class="string">"http://www.w3school.com.cn/p 1/"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(<span class="string">",/?:@&amp;=+$#"</span>));</div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">http%3A%2F%2Fwww.w3school.com.cn</div><div class="line">http%3A%2F%2Fwww.w3school.com.cn%2Fp%201%2F</div><div class="line">%2C%2F%3F%3A%40%26%3D%2B%24%23</div></pre></td></tr></table></figure>
+<p>解码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decodeURIComponent</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>HTTP 权威指南</li>
+<li>w3cschool</li>
+</ul>
 
       
     </div>
@@ -438,7 +463,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/电脑技巧/" rel="tag"># 电脑技巧</a>
+            <a href="/tags/编码/" rel="tag"># 编码</a>
           
         </div>
       
@@ -451,8 +476,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/26/linux/域名的选择与解析设置/" rel="next" title="域名的选择与解析设置">
-                <i class="fa fa-chevron-left"></i> 域名的选择与解析设置
+              <a href="/2017/06/22/tools/前端工作流-Sublime同步刷新浏览器&分屏操作/" rel="next" title="前端工作流-Sublime同步刷新浏览器&分屏操作">
+                <i class="fa fa-chevron-left"></i> 前端工作流-Sublime同步刷新浏览器&分屏操作
               </a>
             
           </div>
@@ -460,10 +485,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/29/computer/Chrome插件-Vimium(键盘替代鼠标操作)/" rel="prev" title="Chrome插件-Vimium(键盘替代鼠标操作)">
-                Chrome插件-Vimium(键盘替代鼠标操作) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -626,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Quick-Startup"><span class="nav-number">1.</span> <span class="nav-text">Quick Startup</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#encodeURI-decodeURI"><span class="nav-number">1.</span> <span class="nav-text">encodeURI/decodeURI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#encodeURIComponent-decodeURIComponent"><span class="nav-number">2.</span> <span class="nav-text">encodeURIComponent/decodeURIComponent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

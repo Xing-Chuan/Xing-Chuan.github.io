@@ -304,6 +304,199 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/09/23/works/前后端分离的发展过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/23/works/前后端分离的发展过程/" itemprop="url">
+                  前后端分离的发展过程
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-23T19:59:14+08:00">
+                2016-09-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/works/" itemprop="url" rel="index">
+                    <span itemprop="name">works</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前后端未分离开发模式的缺点"><a href="#前后端未分离开发模式的缺点" class="headerlink" title="前后端未分离开发模式的缺点"></a>前后端未分离开发模式的缺点</h2><ol>
+<li>前端完成页面, 后端翻译成模版, 如果前端界面变动, 需要重新再走一遍流程, 开发效率低</li>
+<li>前后端代码强耦合, 维护成本高</li>
+<li>前后端分工不明确, 沟通成本高</li>
+</ol>
+<h2 id="分离与未分离的比较"><a href="#分离与未分离的比较" class="headerlink" title="分离与未分离的比较"></a>分离与未分离的比较</h2><ol>
+<li>交互形式</li>
+</ol>
+<p>在前后端分离架构中，后端只需要负责按照约定的数据格式向前端提供可调用的API服务即可.<br>前后端之间通过HTTP请求进行交互，前端获取到数据后，进行页面的装配和渲染.</p>
+<ol>
+<li>代码组织方式</li>
+</ol>
+<ul>
+<li>半分离</li>
+</ul>
+<p>前后端共用一个代码库，但是代码分别存放在两个工程中。<br>后端不关心或很少关心前端元素的输出情况，前端不能独立进行开发和测试，项目中缺乏前后端交互的测试用例</p>
+<ul>
+<li>分离</li>
+</ul>
+<p>前后端代码库分离，前端代码中有可以进行Mock测试，能支持前端的独立开发和测试.<br>而后端代码中除了功能实现外，还有着详细的测试用例，以保证API的可用性，降低集成风险.</p>
+<ol>
+<li>开发模式</li>
+</ol>
+<ul>
+<li>前后端未分离的开发流程</li>
+</ul>
+<p>提出需求 -&gt; 前端开发 -&gt; 后端翻译成模版 -&gt; 前后端对接 -&gt; 联调遇到问题 -&gt; 前端返工 -&gt; 后端返工 -&gt; 二次集成 -&gt;联调成功 -&gt; 交付</p>
+<ul>
+<li>前后端分离后的开发流程</li>
+</ul>
+<p>提出需求 -&gt; 约定数据接口 -&gt; 前后端并行开发 -&gt; 前后端联调 -&gt; 前端调整页面 -&gt; 联调成功 -&gt; 交付</p>
+<p>在开发模式上, 我们可以看到, 前后端分离不仅仅是工作内容的分离, 更重要的意义是可以并行开发, 简化了工作流程.</p>
+<h2 id="前后端分离的几种方案"><a href="#前后端分离的几种方案" class="headerlink" title="前后端分离的几种方案"></a>前后端分离的几种方案</h2><ol>
+<li>Nginx + Server</li>
+</ol>
+<p>将前端资源部署在Nginx上，后端服务部署在常规的服务器.<br>当浏览器发起访问请求的时候，如果请求的是页面资源，Nginx直接把资源返回到前端；<br>如果请求是调用后端服务，则经过Nginx转发到后端服务器，完成响应后经Nginx返回到浏览器. </p>
+<p>缺点: Nginx 只是向浏览器返回页面静态资源，而国内的搜索引擎爬虫只会抓取静态数据，不会解析页面中的js，这使得应用得不到良好的搜索引擎支持. 同时因为 Nginx 不会进行页面的组装渲染，需要服务器把完成渲染工作，这加重了浏览器的渲染负担.</p>
+<ol>
+<li>Node + Server</li>
+</ol>
+<p>这是淘宝所使用的前后端分离模式，在浏览器与后端服务器之间增加一个了Node Server作为中间层，<br>将前端资源部署到 Node Server 中. Node Server 中还包含了一层 Model Proxy，负责与服务端进行通信.</p>
+<p>浏览器发出的请求都被Node Server接收，然后通过Model Proxy调用后端服务器提供的服务.<br>Node Server得到后端服务器反馈，接着在Node Server中完成页面的组装渲染，把最终页面返回给浏览器.</p>
+<p>缺点: 浏览器所有发出的请求都需要经过Node Server进行中转，然后才能到达后端服务器.<br>在实际的应用中，并不是所有的请求都需要页面渲染，只要在页面上直接调用后端服务器提供的服务即可.<br>所以这个模式必然会对请求性能有所消耗.</p>
+<ol>
+<li>Nginx + Node + Server</li>
+</ol>
+<p>为了能解决方案2中请求性能损失的问题，我们可以考虑在其基础之上增加Nginx.<br>浏览器发起的请求经过Nginx进行分发，URL请求统一分发到Node Server，在Node Server中进行页面组装渲染；<br>API请求则直接发送到后端服务器，完成响应.</p>
+<hr>
+<p>作者 : 纪行川</p>
+<p>博客 : 行川草庐</p>
+<p>声明 : 网站内容可自由转载 , 转载请附上作者信息和详细链接</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/08/07/mobile/移动web开发之viewport/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1748,167 +1941,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/04/30/JavaScript/JavaScript之词法作用域和动态作用域/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/30/JavaScript/JavaScript之词法作用域和动态作用域/" itemprop="url">
-                  JavaScript之词法作用域和动态作用域
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-30T11:34:57+08:00">
-                2016-04-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>作用域规定了如何查找变量，也就是确定当前执行代码对变量的访问权限。</p>
-<p>ECMAScript6之前只有全局作用域和函数作用域。</p>
-<p>JavaScript采用词法作用域(lexical scoping)，也就是静态作用域。</p>
-<h2 id="静态作用域与动态作用域"><a href="#静态作用域与动态作用域" class="headerlink" title="静态作用域与动态作用域"></a>静态作用域与动态作用域</h2><p>因为采用词法作用域，函数的作用域在函数定义的时候就决定了。</p>
-<p>与词法作用域相对的是动态作用域，函数的作用域在函数调用的时候才决定。</p>
-<p>让我们认真看个例子就能明白之间的区别：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> value = <span class="number">1</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(value);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> value = <span class="number">2</span>;</div><div class="line">    foo();</div><div class="line">&#125;</div><div class="line"></div><div class="line">bar();</div></pre></td></tr></table></figure>
-<p>当采用静态作用域时，执行foo函数，先从foo函数内部查找是否有局部变量value，如果没有，<br>就根据书写的位置，查找上面一层的代码，在这里是全局作用域，也就是value等于1，所以最后会打印1</p>
-<p>当采用动态作用域时，执行foo函数，依然是从foo函数内部查找是否有局部变量value。如果没有，<br>就从调用函数的作用域，也就是bar函数内部查找value变量，所以最后会打印2</p>
-<h2 id="动态作用域"><a href="#动态作用域" class="headerlink" title="动态作用域"></a>动态作用域</h2><p>也许你会好奇什么语言是动态作用域？</p>
-<p>bash就是动态作用域，不信的话，把下面的脚本存成例如scope.bash，然后进入相应的目录，用命令行执行 bash ./scope.bash，看看打印的值是多少</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">value=1</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">foo</span></span> () &#123;</div><div class="line">    <span class="built_in">echo</span> <span class="variable">$value</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">bar</span></span> () &#123;</div><div class="line">    <span class="built_in">local</span> value=2;</div><div class="line">    foo;</div><div class="line"> &#125;</div><div class="line">bar</div></pre></td></tr></table></figure>
-<h2 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h2><p>最后，让我们看一个《JavaScript权威指南》中的例子：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> scope = <span class="string">"global scope"</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkscope</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> scope = <span class="string">"local scope"</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> scope;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> f();</div><div class="line">&#125;</div><div class="line">checkscope();</div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> scope = <span class="string">"global scope"</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkscope</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> scope = <span class="string">"local scope"</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> scope;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> f;</div><div class="line">&#125;</div><div class="line">checkscope()();</div></pre></td></tr></table></figure>
-<p>猜猜两段代码各自的执行结果是多少？</p>
-<p>这里直接告诉大家结果，两段代码都会打印’local scope’。</p>
-<p>引用权威指南的回答就是：</p>
-<p>JavaScript函数的执行用到了作用域链，这个作用域链是在函数定义的时候创建的。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1958,7 +1990,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1980,7 +2012,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">52</span>
+                <span class="site-state-item-count">53</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
