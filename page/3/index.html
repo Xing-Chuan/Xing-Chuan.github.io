@@ -304,6 +304,552 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/01/26/works/前端可以做哪些优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/01/26/works/前端可以做哪些优化/" itemprop="url">
+                  前端可以做哪些优化
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-26T21:16:28+08:00">
+                2017-01-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/works/" itemprop="url" rel="index">
+                    <span itemprop="name">works</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>网页打开的延时, 页面操作的流畅度, 就是一个网站的生命.</p>
+<p><img src="http://cms.csdnimg.cn/article/201309/23/52402c4950288_middle.jpg?_=36429" alt="life"></p>
+<p>我们站在前端的角度, 都可以做哪些优化呢?</p>
+<h3 id="来自谷歌的-Web-优化实践"><a href="#来自谷歌的-Web-优化实践" class="headerlink" title="来自谷歌的 Web 优化实践"></a>来自谷歌的 Web 优化实践</h3><ol>
+<li>避免资源 404 请求</li>
+<li>避免CSS @import</li>
+</ol>
+<p>import 依赖关系, 加载完一个再加载另一个</p>
+<ol>
+<li>避免使用document.write</li>
+</ol>
+<p>都用 HTML 来调用, 使用 document.write 浏览器还需要运行 JS 解析器分析下面要做什么</p>
+<ol>
+<li>合并、压缩 CSS, JS文件</li>
+<li>精灵图整合图像, 字体图标代替部分图片</li>
+<li>延迟 JavaScript 加载</li>
+<li>启用Keep-Alive</li>
+<li>将小的CSS和JavaScript代码内嵌到HTML中</li>
+<li>利用浏览器缓存不长变更的资源</li>
+<li>尽量减少DNS查询次数</li>
+<li>尽量减少重定向</li>
+<li>优化样式表和脚本的顺序</li>
+<li>避免JavaScripts阻塞渲染</li>
+<li>缩小原始图像</li>
+<li>指定图像尺寸</li>
+</ol>
+<h3 id="来自雅虎的-Web-优化实践"><a href="#来自雅虎的-Web-优化实践" class="headerlink" title="来自雅虎的 Web 优化实践"></a>来自雅虎的 Web 优化实践</h3><ol>
+<li>内容优化</li>
+</ol>
+<ul>
+<li>避免资源 404 请求</li>
+<li>减少 HTTP 请求</li>
+<li>减少 DNS 查找</li>
+<li>减少重定向</li>
+<li>预加载组件</li>
+<li>延迟加载脚本和内容</li>
+<li>Ajax 缓存文件资源</li>
+<li>减少 DOM 元素数量</li>
+<li>根据域名划分页面内容</li>
+<li>最小化 iframe 数量</li>
+</ul>
+<ol>
+<li>服务器优化</li>
+</ol>
+<ul>
+<li>使用 CDN 内容分发网络</li>
+<li>添加Expires或Cache-Control信息头</li>
+<li>Gzip 压缩</li>
+<li>设置 Etag , 判断服务器与浏览器缓存中内容的一致性</li>
+<li>提前刷新缓冲区</li>
+<li>对Ajax请求使用GET方法</li>
+<li>避免空的 src </li>
+</ul>
+<ol>
+<li>cookie 的优化</li>
+</ol>
+<ul>
+<li>减少 cookie 的大小</li>
+<li>针对Web组件使用域名无关的Cookie ( 突破 cookie 大小的限制 )</li>
+</ul>
+<ol>
+<li>CSS 优化</li>
+</ol>
+<ul>
+<li>将CSS代码放在HTML页面的顶部 </li>
+<li>避免使用CSS表达式</li>
+<li>使用<code>&lt;link&gt;</code>来代替@import</li>
+<li>避免使用Filters</li>
+</ul>
+<ol>
+<li>JavaScript 优化</li>
+</ol>
+<ul>
+<li>将JavaScript脚本放在页面的底部</li>
+<li>将JavaScript和CSS作为外部文件来引用</li>
+<li>缩小JavaScript和CSS</li>
+<li>删除重复的脚本</li>
+<li>最小化DOM的访问</li>
+<li>开发智能的事件处理程序</li>
+</ul>
+<ol>
+<li>图像优化</li>
+</ol>
+<ul>
+<li>优化图片大小</li>
+<li>指定图片大小</li>
+<li>使用精灵图</li>
+<li>favicon 尽量小, 可缓存</li>
+</ul>
+<ol>
+<li>针对移动优化</li>
+</ol>
+<ul>
+<li>保持组件大小在 25KB 以下, iPhone 不能缓存 25KB 以上文件</li>
+<li>打包组件</li>
+</ul>
+<hr>
+<p>作者 : 纪行川</p>
+<p>博客 : 行川草庐</p>
+<p>声明 : 网站内容可自由转载 , 转载请附上作者信息和详细链接</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/01/04/JavaScript/ES6常用语法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/01/04/JavaScript/ES6常用语法/" itemprop="url">
+                  ES6常用语法
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-04T10:33:51+08:00">
+                2017-01-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>声明 : 此篇为转载内容 , 想详细学习 ES6 语法, 可以去拜读下阮一峰写的 ECMAScript 6 入门 ( 第二版 ) </p>
+<p>ECMAScript 6（以下简称ES6）是JavaScript语言的下一代标准。因为当前版本的ES6是在2015年发布的，所以又称ECMAScript 2015。</p>
+<p>也就是说，ES6就是ES2015。<br>虽然目前并不是所有浏览器都能兼容ES6全部特性，但越来越多的程序员在实际项目当中已经开始使用ES6了。所以就算你现在不打算使用ES6，但为了看懂别人的你也该懂点ES6的语法了…<br>在我们正式讲解ES6语法之前，我们得先了解下Babel。</p>
+<blockquote>
+<p>Babel</p>
+</blockquote>
+<p>Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。大家可以选择自己习惯的工具来使用使用Babel，具体过程可直接在Babel官网查看：</p>
+<p>最常用的ES6特性 : let, const, class, extends, super, arrow functions, template string, destructuring, default, rest arguments </p>
+<p>这些是ES6最常用的几个语法，基本上学会它们，我们就可以走遍天下都不怕啦！我会用最通俗易懂的语言和例子来讲解它们，保证一看就懂，一学就会。<br>let, const这两个的用途与var类似，都是用来声明变量的，但在实际运用中他俩都有各自的特殊用途。<br>首先来看下面这个例子：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name =<span class="string">'zach'</span></div><div class="line"></div><div class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> name =<span class="string">'obama'</span></div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(name)  <span class="comment">//obama</span></div><div class="line"></div><div class="line">    <span class="keyword">break</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(name)  <span class="comment">//obama</span></div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/01/04/JavaScript/ES6常用语法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/10/02/JavaScript/事件添加、删除-阻止冒泡和浏览器默认行为的兼容性写法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/02/JavaScript/事件添加、删除-阻止冒泡和浏览器默认行为的兼容性写法/" itemprop="url">
+                  事件添加、删除,阻止冒泡和浏览器默认行为的兼容性写法
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-02T22:07:33+08:00">
+                2016-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="添加事件"><a href="#添加事件" class="headerlink" title="添加事件"></a>添加事件</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> addEvent = <span class="function"><span class="keyword">function</span>(<span class="params">obj, type, fn</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (obj.addEventListener) &#123;</div><div class="line">    obj.addEventListener(type, fn, <span class="literal">false</span>)</div><div class="line">  &#125;<span class="keyword">else</span> <span class="keyword">if</span> (obj.attachEvent) &#123;</div><div class="line">    obj.attachEvent(<span class="string">'on'</span> + type, fn)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="移除事件"><a href="#移除事件" class="headerlink" title="移除事件"></a>移除事件</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> removeEvent = <span class="function"><span class="keyword">function</span>(<span class="params">obj, type, fn</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (obj.removeEventListener) &#123;</div><div class="line">    obj.removeEventListener(type, fn, <span class="literal">false</span>)</div><div class="line">  &#125;<span class="keyword">else</span> <span class="keyword">if</span> (obj.detachEvent) &#123;</div><div class="line">    obj.detachEvent(<span class="string">'on'</span> + type, fn)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="阻止冒泡事件和浏览器默认行为"><a href="#阻止冒泡事件和浏览器默认行为" class="headerlink" title="阻止冒泡事件和浏览器默认行为"></a>阻止冒泡事件和浏览器默认行为</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> stopEvent = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  e = e || <span class="built_in">window</span>.event</div><div class="line">  <span class="keyword">if</span> (e.preventDefault) &#123;</div><div class="line">    e.preventDefault()</div><div class="line">    e.stopPropagation()</div><div class="line">  &#125;<span class="keyword">else</span>&#123;</div><div class="line">    e.returnValue = <span class="literal">false</span></div><div class="line">    e.cancelBubble = <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="阻止冒泡事件"><a href="#阻止冒泡事件" class="headerlink" title="阻止冒泡事件"></a>阻止冒泡事件</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> stopPropagation = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  e = e || <span class="built_in">window</span>.event</div><div class="line">  <span class="keyword">if</span> (e.stopPropagation) &#123;</div><div class="line">    e.stopPropagation()</div><div class="line">  &#125;<span class="keyword">else</span> &#123;</div><div class="line">    e.cancelBubble = <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="阻止浏览器默认行为"><a href="#阻止浏览器默认行为" class="headerlink" title="阻止浏览器默认行为"></a>阻止浏览器默认行为</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span>  preventDefault  = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    e = e || <span class="built_in">window</span>.event;</div><div class="line">    <span class="keyword">if</span>(e.preventDefault) &#123;</div><div class="line">      e.preventDefault();</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">      e.returnValue = <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="获取事件源"><a href="#获取事件源" class="headerlink" title="获取事件源"></a>获取事件源</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> getEventTarget = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  e = e || <span class="built_in">window</span>.event</div><div class="line">  <span class="keyword">var</span> target = e.srcElement?e.srcElement:e.target</div><div class="line">  <span class="keyword">return</span> target</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/09/23/works/前后端分离的发展过程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1436,516 +1982,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/05/04/experiences/解决谷歌账户注册手机号无法重用的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/04/experiences/解决谷歌账户注册手机号无法重用的问题/" itemprop="url">
-                  解决谷歌账户注册手机号无法重用的问题
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-04T12:13:37+08:00">
-                2016-05-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/computer/" itemprop="url" rel="index">
-                    <span itemprop="name">computer</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>昨天准备新注册个谷歌账户做公事用途,提示我的手机号已注册过手机服务.</p>
-<p>我用的是新手机号,确认自己没用它注册过谷歌账户,但以前手机账户持有人就说不定了.</p>
-<p>翻阅无数帖子,终于发现了一个解决办法.</p>
-<p>在Android、IOS手机端下载QQ邮箱或者网易邮箱大师等第三方邮箱管理App,</p>
-<p>安装完邮箱App后,添加Gmail账户,会自动跳转到Gmail登录界面,</p>
-<p>点击登录界面的”新建账户”按钮,填写信息即可成功注册.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/05/01/JavaScript/正则表达式匹配表/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/01/JavaScript/正则表达式匹配表/" itemprop="url">
-                  正则表达式匹配表
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-01T22:03:54+08:00">
-                2016-05-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>以下是常用正则表达式概要, 留作查询之用</p>
-<h3 id="常用的正则表达式字符"><a href="#常用的正则表达式字符" class="headerlink" title="常用的正则表达式字符"></a>常用的正则表达式字符</h3><table>
-<thead>
-<tr>
-<th>字符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>^</td>
-<td>匹配开头</td>
-</tr>
-<tr>
-<td>$</td>
-<td>匹配结尾</td>
-</tr>
-<tr>
-<td>*</td>
-<td>元字符出现0或多次</td>
-</tr>
-<tr>
-<td>+</td>
-<td>元字符出现1或多次</td>
-</tr>
-<tr>
-<td>?</td>
-<td>元字符出现0或1次</td>
-</tr>
-<tr>
-<td>{n,m}</td>
-<td>匹配n到m次</td>
-</tr>
-<tr>
-<td>\b</td>
-<td>单词边界</td>
-</tr>
-<tr>
-<td>\d</td>
-<td>匹配一个数字</td>
-</tr>
-<tr>
-<td>\D</td>
-<td>匹配一个非数字</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>匹配一个空白字符</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>匹配一个非空白字符</td>
-</tr>
-<tr>
-<td>\w</td>
-<td>匹配一个非特殊字符, 包括_</td>
-</tr>
-<tr>
-<td>\W</td>
-<td>匹配一个特殊字符</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2016/05/01/computer/推荐一个可以下载Chrome插件的网站/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/01/computer/推荐一个可以下载Chrome插件的网站/" itemprop="url">
-                  推荐一个可以下载Chrome插件的网站
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-01T11:00:49+08:00">
-                2016-05-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/computer/" itemprop="url" rel="index">
-                    <span itemprop="name">computer</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>当我们在谷歌商店安装过拓展之后, crx 包会被自动删掉,<br>有时, 我们需要提供 crx 给不会使用科学上网技术, 或是网速不稳定的朋友,<br>那么我们需要使用一个第三方提供的下载服务,<br>今天推荐的这个就是我目前在使用的, 使用简单方便.</p>
-<h3 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h3><p><a href="http://chrome-extension-downloader.com/" target="_blank" rel="external">http://chrome-extension-downloader.com/</a></p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>当我们在在谷歌商店打开一个拓展应用的介绍页面时, 我们的地址栏是如下格式的:<br><code>https://chrome.google.com/webstore/detail/google-keep-chrome-extens/lpcaedmchfhocbbapmcbpinfpgnhiddi</code></p>
-<ol>
-<li>打开网站</li>
-<li>将 <code>detail/</code> 后面的字符串 <code>google-keep-chrome-extens/lpcaedmchfhocbbapmcbpinfpgnhiddi</code> 粘贴到文本框</li>
-<li>点击 <code>Download extension</code> 即可自动下载</li>
-<li>将下载到的 crx 文件拖到 Chrome 内核浏览器中</li>
-<li>安装完毕</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1990,7 +2031,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">39</span>
+                <span class="site-state-item-count">42</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2012,7 +2053,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">53</span>
+                <span class="site-state-item-count">57</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
