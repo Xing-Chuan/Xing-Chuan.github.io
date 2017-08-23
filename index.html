@@ -304,6 +304,796 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/08/18/report/钉钉微应用开发调研报告/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/08/18/report/钉钉微应用开发调研报告/" itemprop="url">
+                  钉钉微应用开发调研报告
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-18T09:31:13+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/report/" itemprop="url" rel="index">
+                    <span itemprop="name">report</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="钉钉微应用开发调研报告"><a href="#钉钉微应用开发调研报告" class="headerlink" title="钉钉微应用开发调研报告"></a>钉钉微应用开发调研报告</h1><h2 id="开发者企业类型"><a href="#开发者企业类型" class="headerlink" title="开发者企业类型"></a>开发者企业类型</h2><h3 id="企业内部开发"><a href="#企业内部开发" class="headerlink" title="企业内部开发"></a>企业内部开发</h3><ul>
+<li>不能发布微应用到钉钉微应用商店</li>
+<li>可后台自建微应用</li>
+<li>企业IT介入开发, 链接公司OA域名</li>
+</ul>
+<h3 id="应用服务商-ISV"><a href="#应用服务商-ISV" class="headerlink" title="应用服务商(ISV)"></a>应用服务商(ISV)</h3><ul>
+<li>可以发布微应用到钉钉微应用商店</li>
+<li>需要申请应用服务商的资质</li>
+<li>上架前, 需要缴纳保证金, 保证金成阶梯式, 授权用户量到达下一个阶段, 需要向钉钉补缴保证金, 免费型最低5万元起缴</li>
+<li>需要将要上架的套件部署在阿里云的聚石塔服务上(购买ECS和RDS)</li>
+<li>上架前, 应用服务商公司全员需要使用钉钉办公, 并且效率值达到 80 分以上.</li>
+<li>上架前, 需要完成5家用户共创和50家用户灰度测试(自行寻找5家用户共创)</li>
+<li>需要提交共创报告, 钉钉小二回访审核</li>
+<li>上架的微应用需要支持免登服务</li>
+</ul>
+<h3 id="集成服务商"><a href="#集成服务商" class="headerlink" title="集成服务商"></a>集成服务商</h3><ul>
+<li>专职为钉钉的企业用户提供定制服务</li>
+<li>需要参加参加钉钉开放平台考试，含笔试和DEMO实例考试</li>
+<li>缴纳保证金给钉钉, 可出现在钉钉的服务商推荐列表中</li>
+<li>规范要求更严格</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/4434201-206e059c4180c59e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h2 id="开发者企业类型选择"><a href="#开发者企业类型选择" class="headerlink" title="开发者企业类型选择"></a>开发者企业类型选择</h2><p>成为钉钉的应用服务商(ISV)或集成服务商, 才有在微应用市场上架的资质.</p>
+<p>自有业务的开发和移植, 不做企业定制业务, 首选是成为应用服务商(ISV).</p>
+<h2 id="ISV-上架应用整体流程"><a href="#ISV-上架应用整体流程" class="headerlink" title="ISV 上架应用整体流程"></a>ISV 上架应用整体流程</h2><p>第一步：成为开发者，认证服务商 ，打开open.dingtalk.com-注册开发者-完成信息填写； <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=104941&amp;docType=1" target="_blank" rel="external">点击查看详情</a></p>
+<ol>
+<li>注册钉钉企业用户</li>
+<li>注册成为钉钉开发者</li>
+</ol>
+<p>第二步：商务对接 ，点击<a href="https://t.dingtalk.com/invite/index?spm=a219a.7629140.0.0.rzvBYK&amp;code=40ad61c51a&amp;inviterUid=2395F9C0DD34A91399372A3FA1525DE6" target="_blank" rel="external">加入ISV沟通组</a> ，通过该组织的 工作页面-审批-提交《合作申请表》</p>
+<p>第三步：产品开发 ，通过钉钉提供的开发文档，进行应用的开发。开发文档 <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=104941&amp;docType=1" target="_blank" rel="external">点击查看详情</a></p>
+<ol>
+<li>预估需使用的服务器资源( 钉钉要求应用服务商的套件应用必须部署到聚石塔上 )</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/4434201-955736b68100dfe5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<ol>
+<li>购买聚石塔 ECS 和 RDS 并配置 , <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.MVNg4D&amp;treeId=366&amp;articleId=106046&amp;docType=1" target="_blank" rel="external">官方说明</a></li>
+<li>在开发者平台创建套件和微应用</li>
+<li>创建测试企业账号</li>
+<li>进行套件的开发</li>
+</ol>
+<p>第四步：用户共创 ，将已经开发完成的应用，提交给企业用户进行试用，并通过用户的反馈和使用过程中产生的问题进行迭代优化，达到共创用户满意。<a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=105856&amp;docType=1#s3" target="_blank" rel="external">点击查看详情</a></p>
+<p>第五步：上架验收 ，产品上架前，钉钉运营人员会对产品的质量、性能、产品的业务逻辑等进行验收；<a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=105856&amp;docType=1#s4" target="_blank" rel="external">点击查看详情</a></p>
+<p>第六步：缴纳保证金 ，上架到应用市场的所有应用需要缴纳保证金； <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=286&amp;articleId=106052&amp;docType=1#s2" target="_blank" rel="external">点击查看保证金标准</a> | <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=105856&amp;docType=1#s5" target="_blank" rel="external">点击查看操作流程</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4434201-6ffc6cdbfc51b230.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>第七步：商务验收 ，商务会对你所在企业的相关情况进行商务验收；<a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=105856&amp;docType=1#s6" target="_blank" rel="external">点击查看详情</a></p>
+<p>第八步：上架应用市场 ，以上流程完成后，可以通过开发者平台提交商品，并有专人审核发布上线；<a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.rzvBYK&amp;treeId=366&amp;articleId=105856&amp;docType=1#s7" target="_blank" rel="external">点击查看详情</a></p>
+<h2 id="钉钉开发中的参数和名词"><a href="#钉钉开发中的参数和名词" class="headerlink" title="钉钉开发中的参数和名词"></a>钉钉开发中的参数和名词</h2><ul>
+<li>userId 用户的唯一身份标识</li>
+<li>jobnumber 用户在企业中的身份标识, 一个用户可能分属不同企业, 切换企业时看到的工作台也不同</li>
+<li>corpId 企业的唯一身份标识, 可以在开发者后台找到</li>
+<li>CorpSecret 是企业每个应用的凭证密钥, 可以在开发者后台找到</li>
+<li>AccessToken 是企业访问钉钉开放平台接口的全局唯一票据, 调用钉钉开放平台接口时需使用, 由CorpID和CorpSecret换取</li>
+<li>SsoToken ISV开发微应用后台免登中使用, 使用ISV自身企业的corpid和ssosecret来换取</li>
+<li>suite 套件</li>
+<li>suitekey 创建套件时获取</li>
+<li>suitesecret 创建套件时获取</li>
+<li>suiteticket 钉钉服务端每20分钟向创建套件填入的回调地址推送的套件ticket</li>
+<li>tmp_auth_code 企业添加微应用时（测试的时候在开发者后台为套件绑定测试企业进行测试），钉钉服务端会向isv回调接口推送的tmp_auth_code</li>
+<li>suite_access_token 应用套件令牌, 向钉钉服务端请求</li>
+<li>permanent_auth_code 企业的永久授权码</li>
+<li>access_token 服务提供商在取得企业的永久授权码并完成对企业应用的设置之后, 调用企业接口所需, 可使用permanent_auth_code、corpId（通过在页面地址跟?corpId=$CORPID$进行获取）、suite_access_token获取</li>
+<li>jsticket 服务端向钉钉服务端请求, 用于生成签名, 返还给H5页面做鉴权使用, 判断H5页面是否有使用 JSAPI 的权限</li>
+<li>appid 在套件中创建微应用的ID标识, 微应用被添加到企业的工作台, 会生成 agentId</li>
+<li>agentId 微应用ID，普通企业可以通过OA后台的微应用－设置查看agentID，ISV需要通过调用授权成功后的get_auth_info获取授权方的agentid</li>
+<li>timeStamp 生成签名的时间戳</li>
+<li>nonceStr 生成签名的随机串</li>
+<li>signature 签名</li>
+<li>code 由JSAPI获取, 交给服务端用来获取用户身份信息</li>
+<li>onSuccess JSAPI成功后的回调</li>
+<li>onFail JSAPI失败后的回调</li>
+</ul>
+<h2 id="主动调用钉钉接口的频率限制"><a href="#主动调用钉钉接口的频率限制" class="headerlink" title="主动调用钉钉接口的频率限制"></a>主动调用钉钉接口的频率限制</h2><p>为了防止微应用程序错误, 过量请求钉钉开放接口, 钉钉对主动请求的频率做了限制, 所以日常开发中, 要控制请求的频率, 在数据有效期内做好数据缓存.</p>
+<ul>
+<li>每个企业调用单个接口的频率不可超过1500次/分</li>
+<li>每个ISV（应用提供商）调用单个接口的频率不可超过2000次/分</li>
+<li>每个ISV（应用提供商）调用单个企业的单个接口频率不可超过1500次/分</li>
+<li>每个套件调用单个企业的单个接口频率不可超过1000次/分</li>
+</ul>
+<p>钉钉会根据运营情况有所调整, 这是目前官方文档的最新数据.</p>
+<h2 id="鉴权和免登"><a href="#鉴权和免登" class="headerlink" title="鉴权和免登"></a>鉴权和免登</h2><h3 id="鉴权"><a href="#鉴权" class="headerlink" title="鉴权"></a>鉴权</h3><p>移动端可以使用钉钉封装的 JSAPI 调用部分手机原生功能, 但涉及到用户隐私行为的 API 就需要鉴权, 来判断你是否有使用这个 API 的权力.</p>
+<p>第一步: 引入钉钉封装的js文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>第二步: 向服务端请求鉴权所需要的信息</p>
+<p>请求的信息包括: agentId、corpId、timeStamp、nonceStr、signature.</p>
+<p>这些信息需要服务端请求钉钉的公共接口得到, 下一节会叙述这里.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">dd.config(&#123;</div><div class="line">    <span class="attr">agentId</span>: <span class="string">''</span>, <span class="comment">// 必填，微应用ID</span></div><div class="line">    corpId: <span class="string">''</span>,<span class="comment">//必填，企业ID</span></div><div class="line">    timeStamp: , <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: <span class="string">''</span>, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature: <span class="string">''</span>, <span class="comment">// 必填，签名</span></div><div class="line">    type:<span class="number">0</span>/<span class="number">1</span>,   <span class="comment">//选填。0表示微应用的jsapi,1表示服务窗的jsapi。不填默认为0。该参数从dingtalk.js的0.8.3版本开始支持</span></div><div class="line">    jsApiList : [ <span class="string">'runtime.info'</span>, <span class="string">'biz.contact.choose'</span>,</div><div class="line">        <span class="string">'device.notification.confirm'</span>, <span class="string">'device.notification.alert'</span>,</div><div class="line">        <span class="string">'device.notification.prompt'</span>, <span class="string">'biz.ding.post'</span>,</div><div class="line">        <span class="string">'biz.util.openLink'</span> ] <span class="comment">// 必填，需要使用的jsapi列表，注意：不要带dd。</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>PS: 上架到微应用商店, 服务对象是各种企业, corpId 是企业唯一标识, 如果想动态获取 corpId, 我们可以这样配置微应用链接.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://xccl.cc/index/?corpid=<span class="variable">$CORPID</span>$</div></pre></td></tr></table></figure>
+<p>这样我们可以从 query 中获得 corpId.</p>
+<p>鉴权通过, 就可以使用被限制的 JSAPI 了, 但需要在 <code>dd.ready(fn)</code> 中写 JSAPI, 无论是不需鉴权和需要鉴权的, 否则是无效的.</p>
+<p>如果鉴权不通过, 我们可以在 <code>dd.error(fn)</code> 中打印错误信息详情.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// dd.ready(function() &#123;</span></div><div class="line"><span class="comment">//   dd.device.notification.confirm(&#123;</span></div><div class="line"><span class="comment">//     "message":"这个是一个弹窗confirm",</span></div><div class="line"><span class="comment">//     "title":"提示",</span></div><div class="line"><span class="comment">//     "buttonLabels":["知道了","取消"]</span></div><div class="line"><span class="comment">//   &#125;);</span></div><div class="line"><span class="comment">// &#125;;</span></div><div class="line">dd.error(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">    alert(<span class="string">'dd error: '</span> + <span class="built_in">JSON</span>.stringify(err));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="免登"><a href="#免登" class="headerlink" title="免登"></a>免登</h3><p>前端H5可以请求免登 code, 提供给服务端, 服务端再向钉钉公共接口请求用户信息, 将拿到的用户信息与服务器对比, 就可以实现免登.</p>
+<p>钉钉要求第三方微应用需要支持免登.</p>
+<p>钉钉的免登完整流程图:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4434201-6035c50f137dc6f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>推荐一篇博文 <a href="http://blog.csdn.net/jeryjeryjery/article/details/53199992" target="_blank" rel="external">钉钉实现企业级微应用免登陆详解</a>, 记录服务端为 Java 的实现过程.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">dd.config(&#123;</div><div class="line">    <span class="attr">agentId</span>: <span class="string">''</span>, <span class="comment">// 必填，微应用ID</span></div><div class="line">    corpId: <span class="string">''</span>,<span class="comment">//必填，企业ID</span></div><div class="line">    timeStamp: , <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: <span class="string">''</span>, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature: <span class="string">''</span>, <span class="comment">// 必填，签名</span></div><div class="line">    type:<span class="number">0</span>/<span class="number">1</span>,   <span class="comment">//选填。0表示微应用的jsapi,1表示服务窗的jsapi。不填默认为0。该参数从dingtalk.js的0.8.3版本开始支持</span></div><div class="line">    jsApiList : [ <span class="string">'runtime.info'</span>, <span class="string">'biz.contact.choose'</span>,</div><div class="line">        <span class="string">'device.notification.confirm'</span>, <span class="string">'device.notification.alert'</span>,</div><div class="line">        <span class="string">'device.notification.prompt'</span>, <span class="string">'biz.ding.post'</span>,</div><div class="line">        <span class="string">'biz.util.openLink'</span> ] <span class="comment">// 必填，需要使用的jsapi列表，注意：不要带dd。</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// JSAPI 需要写在 dd.ready(fn) 中</span></div><div class="line">dd.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   dd.runtime.permission.requestAuthCode(&#123;</div><div class="line">          <span class="attr">corpId</span> : _config.corpId,</div><div class="line">          <span class="attr">onSuccess</span> : <span class="function"><span class="keyword">function</span>(<span class="params">info</span>) </span>&#123;</div><div class="line">              <span class="comment">// 将活动到的免登 code 发送给服务端, code 5分钟有效期, 且只能使用一次</span></div><div class="line">              $.ajax(&#123;</div><div class="line">                  <span class="attr">url</span> : <span class="string">'userinfo?code='</span> + info.code + <span class="string">'&amp;corpid='</span> _config.corpId,</div><div class="line">                  <span class="attr">type</span> : <span class="string">'get'</span>,</div><div class="line">                  <span class="attr">success</span> : <span class="function"><span class="keyword">function</span>(<span class="params">&#123;data, flag, msg&#125;</span>) </span>&#123;</div><div class="line">                      <span class="keyword">var</span> info = <span class="built_in">JSON</span>.parse(data);</div><div class="line">                      alert(<span class="string">"用户"</span>+info.name+<span class="string">"登录成功"</span>);</div><div class="line">                  &#125;</div><div class="line">              &#125;);</div><div class="line">          &#125;,</div><div class="line">          <span class="attr">onFail</span> : <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">              alert(<span class="string">'fail: '</span> + <span class="built_in">JSON</span>.stringify(err));</div><div class="line">          &#125;</div><div class="line">      &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>鉴权成功后, 才可使用免登服务.</p>
+<h2 id="移动端开发"><a href="#移动端开发" class="headerlink" title="移动端开发"></a>移动端开发</h2><p>钉钉的微应用是基于 H5 的, 实际在后台配置的是一个网页链接, 用户在工作台点击后在钉钉的 webview 中打开网页.</p>
+<p>鉴权的主要逻辑在服务端, 前端需要取得服务端提供的签名等数据鉴权, 利用 dd.runtime.promission.requestAuthCode() 取得免登 code 提供给服务端. 业务的开发和正常H5页面开发一致, 但在钉钉中, 我们可以使用钉钉提供的 JSAPI 调用一些原生的功能, 例如手机震动、拍照、扫码等.</p>
+<p>第一步: 引入钉钉js文件</p>
+<p>第二步: 鉴权和免登(如果需要)</p>
+<p>第三步: H5业务开发 &amp; JSAPI调用原生功能开发</p>
+<p>JSAPI 列表:</p>
+<table>
+<thead>
+<tr>
+<th>JSAPI列表</th>
+<th>是否需要dd.config</th>
+<th>接口说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device.notification.alert</td>
+<td>不需要</td>
+<td>alert弹窗</td>
+</tr>
+<tr>
+<td>device.notification.confirm</td>
+<td>不需要</td>
+<td>confirm弹窗</td>
+</tr>
+<tr>
+<td>device.notification.prompt</td>
+<td>不需要</td>
+<td>prompt弹窗</td>
+</tr>
+<tr>
+<td>device.notification.vibrate</td>
+<td>不需要</td>
+<td>手机震动</td>
+</tr>
+<tr>
+<td>device.accelerometer.watchShake</td>
+<td>不需要</td>
+<td>监听shake</td>
+</tr>
+<tr>
+<td>device.accelerometer.clearShake</td>
+<td>不需要</td>
+<td>取消监听shake</td>
+</tr>
+<tr>
+<td>device.notification.toast</td>
+<td>不需要</td>
+<td>toast弹窗</td>
+</tr>
+<tr>
+<td>device.notification.actionSheet</td>
+<td>不需要</td>
+<td>actionSheet弹窗</td>
+</tr>
+<tr>
+<td>device.notification.showPreloader</td>
+<td>不需要</td>
+<td>显示加载中</td>
+</tr>
+<tr>
+<td>device.notification.hidePreloader</td>
+<td>不需要</td>
+<td>隐藏加载中</td>
+</tr>
+<tr>
+<td>biz.navigation.setLeft</td>
+<td>不需要</td>
+<td>设置左侧导航按钮文案</td>
+</tr>
+<tr>
+<td>biz.navigation.setRight</td>
+<td>不需要</td>
+<td>设置导航栏右侧</td>
+</tr>
+<tr>
+<td>biz.navigation.setTitle</td>
+<td>不需要</td>
+<td>设置标题</td>
+</tr>
+<tr>
+<td>device.connection.getNetworkType</td>
+<td>不需要</td>
+<td>获取网络类型</td>
+</tr>
+<tr>
+<td>biz.util.openLink</td>
+<td>不需要</td>
+<td>打开一个新的H5页面</td>
+</tr>
+<tr>
+<td>biz.util.datepicker</td>
+<td>不需要</td>
+<td>日期选择器</td>
+</tr>
+<tr>
+<td>biz.util.timepicker</td>
+<td>不需要</td>
+<td>时间选择器</td>
+</tr>
+<tr>
+<td>biz.util.datetimepicker</td>
+<td>不需要</td>
+<td>时间日期选择器</td>
+</tr>
+<tr>
+<td>biz.navigation.goBack</td>
+<td>不需要</td>
+<td>返回上一级页面</td>
+</tr>
+<tr>
+<td>biz.navigation.close</td>
+<td>不需要</td>
+<td>关闭当前页面</td>
+</tr>
+<tr>
+<td>biz.navigation.setMenu</td>
+<td>不需要</td>
+<td>设置Menu</td>
+</tr>
+<tr>
+<td>biz.navigation.replace</td>
+<td>不需要</td>
+<td>替换当前页面</td>
+</tr>
+<tr>
+<td>biz.util.previewImage</td>
+<td>不需要</td>
+<td>图片预览</td>
+</tr>
+<tr>
+<td>biz.util.chosen</td>
+<td>不需要</td>
+<td>下拉控件</td>
+</tr>
+<tr>
+<td>ui.input.plain</td>
+<td>不需要</td>
+<td>输入框</td>
+</tr>
+<tr>
+<td>ui.progressBar.setColors</td>
+<td>不需要</td>
+<td>设置下拉刷新的颜色</td>
+</tr>
+<tr>
+<td>ui.pullToRefresh.enable</td>
+<td>不需要</td>
+<td>打开下拉刷新设置</td>
+</tr>
+<tr>
+<td>ui.pullToRefresh.disable</td>
+<td>不需要</td>
+<td>禁止下拉刷新</td>
+</tr>
+<tr>
+<td>ui.pullToRefresh.stop</td>
+<td>不需要</td>
+<td>停止下拉刷新</td>
+</tr>
+<tr>
+<td>ui.webViewBounce.disable</td>
+<td>不需要</td>
+<td>禁用iOS WebView弹性效果</td>
+</tr>
+<tr>
+<td>ui.webViewBounce.enable</td>
+<td>不需要</td>
+<td>开启iOS WebView弹性效果</td>
+</tr>
+<tr>
+<td>runtime.permission.requestAuthCode</td>
+<td>不需要</td>
+<td>获取用于免登code</td>
+</tr>
+<tr>
+<td>device.notification.modal</td>
+<td>不需要</td>
+<td>弹一个dialog</td>
+</tr>
+<tr>
+<td>biz.util.scan</td>
+<td>不需要</td>
+<td>扫码</td>
+</tr>
+<tr>
+<td>biz.navigation.setIcon</td>
+<td>不需要</td>
+<td>设置图标</td>
+</tr>
+<tr>
+<td>ui.nav.preload</td>
+<td>不需要</td>
+<td>预加载</td>
+</tr>
+<tr>
+<td>ui.nav.go</td>
+<td>不需要</td>
+<td>跳转</td>
+</tr>
+<tr>
+<td>ui.nav.recycle</td>
+<td>不需要</td>
+<td>回收</td>
+</tr>
+<tr>
+<td>ui.nav.getCurrentId</td>
+<td>不需要</td>
+<td>获取当前打开的id</td>
+</tr>
+<tr>
+<td>ui.nav.close</td>
+<td>不需要</td>
+<td>关闭当前打开的页面</td>
+</tr>
+<tr>
+<td>ui.nav.backTo</td>
+<td>不需要</td>
+<td>退出到某个id</td>
+</tr>
+<tr>
+<td>ui.nav.push</td>
+<td>不需要</td>
+<td>压入一个</td>
+</tr>
+<tr>
+<td>ui.nav.pop</td>
+<td>不需要</td>
+<td>弹出一个</td>
+</tr>
+<tr>
+<td>ui.nav.quit</td>
+<td>不需要</td>
+<td>退出nav</td>
+</tr>
+<tr>
+<td>device.base.getSettings</td>
+<td>不需要</td>
+<td>获取设置项</td>
+</tr>
+<tr>
+<td>device.nfc.nfcRead</td>
+<td>不需要</td>
+<td>读取NFC</td>
+</tr>
+<tr>
+<td>util.domainStorage.setItem</td>
+<td>不需要</td>
+<td>插入要存储的值</td>
+</tr>
+<tr>
+<td>util.domainStorage.getItem</td>
+<td>不需要</td>
+<td>获取存储的值</td>
+</tr>
+<tr>
+<td>util.domainStorage.removeItem</td>
+<td>不需要</td>
+<td>删除存入的值</td>
+</tr>
+<tr>
+<td>service.request.httpOverLwp</td>
+<td>不需要</td>
+<td>安全通道</td>
+</tr>
+<tr>
+<td>device.geolocation.get</td>
+<td>需要</td>
+<td>获取地理位置信息</td>
+</tr>
+<tr>
+<td>device.base.getUUID</td>
+<td>需要</td>
+<td>获取uuid</td>
+</tr>
+<tr>
+<td>device.base.getInterface</td>
+<td>需要</td>
+<td>获取当前连接wifi</td>
+</tr>
+<tr>
+<td>device.launcher.checkInstalledApps</td>
+<td>需要</td>
+<td>检查一个app是否在手机上安装</td>
+</tr>
+<tr>
+<td>device.launcher.launchApp</td>
+<td>需要</td>
+<td>打开一个app</td>
+</tr>
+<tr>
+<td>biz.util.open</td>
+<td>需要</td>
+<td>打开一些业务逻辑</td>
+</tr>
+<tr>
+<td>biz.util.share</td>
+<td>需要</td>
+<td>分享</td>
+</tr>
+<tr>
+<td>biz.contact.choose</td>
+<td>需要</td>
+<td>选人</td>
+</tr>
+<tr>
+<td>biz.user.get</td>
+<td>需要</td>
+<td>获取用户信息</td>
+</tr>
+<tr>
+<td>biz.util.uploadImage</td>
+<td>需要</td>
+<td>上传图片</td>
+</tr>
+<tr>
+<td>biz.ding.post</td>
+<td>需要</td>
+<td>发ding消息</td>
+</tr>
+<tr>
+<td>biz.telephone.call</td>
+<td>需要</td>
+<td>拨打钉钉电话</td>
+</tr>
+<tr>
+<td>biz.telephone.showCallMenu</td>
+<td>需要</td>
+<td>拨打普通电话</td>
+</tr>
+<tr>
+<td>biz.chat.chooseConversation</td>
+<td>需要</td>
+<td>选择会话</td>
+</tr>
+<tr>
+<td>biz.contact.createGroup</td>
+<td>需要</td>
+<td>创建群聊</td>
+</tr>
+<tr>
+<td>biz.map.locate</td>
+<td>需要</td>
+<td>定位到地图页面</td>
+</tr>
+<tr>
+<td>biz.map.search</td>
+<td>需要</td>
+<td>地图页面支持搜索</td>
+</tr>
+<tr>
+<td>biz.map.view</td>
+<td>需要</td>
+<td>地图预览</td>
+</tr>
+<tr>
+<td>device.geolocation.openGps</td>
+<td>需要</td>
+<td>打开GPS</td>
+</tr>
+<tr>
+<td>biz.util.uploadImageFromCamera</td>
+<td>需要</td>
+<td>拍照上传附件</td>
+</tr>
+<tr>
+<td>biz.customContact.multipleChoose</td>
+<td>需要</td>
+<td>多选自定义选人</td>
+</tr>
+<tr>
+<td>biz.customContact.choose</td>
+<td>需要</td>
+<td>单选自定义选人</td>
+</tr>
+<tr>
+<td>biz.contact.complexPicker</td>
+<td>需要</td>
+<td>选人选部门</td>
+</tr>
+<tr>
+<td>biz.contact.departmentsPicker</td>
+<td>需要</td>
+<td>选部门</td>
+</tr>
+<tr>
+<td>biz.contact.setRule</td>
+<td>需要</td>
+<td>设置选人规则</td>
+</tr>
+<tr>
+<td>biz.contact.externalComplexPicker</td>
+<td>需要</td>
+<td>选取外部联系人</td>
+</tr>
+<tr>
+<td>biz.contact.externalEditForm</td>
+<td>需要</td>
+<td>编辑外部联系人</td>
+</tr>
+<tr>
+<td>biz.chat.pickConversation</td>
+<td>需要</td>
+<td>获取会话信息</td>
+</tr>
+<tr>
+<td>biz.chat.chooseConversationByCorpId</td>
+<td>需要</td>
+<td>通过corpid选取会话</td>
+</tr>
+<tr>
+<td>biz.chat.openSingleChat</td>
+<td>需要</td>
+<td>打开单聊会话</td>
+</tr>
+<tr>
+<td>biz.chat.toConversation</td>
+<td>需要</td>
+<td>根据chatid跳转到对应会话</td>
+</tr>
+<tr>
+<td>biz.cspace.saveFile</td>
+<td>需要</td>
+<td>保存钉盘文件</td>
+</tr>
+<tr>
+<td>biz.cspace.preview</td>
+<td>需要</td>
+<td>预览钉盘文件</td>
+</tr>
+<tr>
+<td>biz.cspace.chooseSpaceDir</td>
+<td>需要</td>
+<td>选取钉盘目录</td>
+</tr>
+<tr>
+<td>biz.util.uploadAttachment</td>
+<td>需要</td>
+<td>上传钉盘文件</td>
+</tr>
+<tr>
+<td>biz.clipboardData.setData</td>
+<td>需要</td>
+<td>复制到粘贴板</td>
+</tr>
+<tr>
+<td>biz.intent.fetchData</td>
+<td>需要</td>
+<td>获取多选的数据</td>
+</tr>
+<tr>
+<td>biz.chat.locationChatMessage</td>
+<td>需要</td>
+<td>打开聊天详情到某条消息</td>
+</tr>
+<tr>
+<td>device.audio.startRecord</td>
+<td>需要</td>
+<td>开始录音</td>
+</tr>
+<tr>
+<td>device.audio.stopRecord</td>
+<td>需要</td>
+<td>结束录音</td>
+</tr>
+<tr>
+<td>device.audio.onRecordEnd</td>
+<td>需要</td>
+<td>录音结束</td>
+</tr>
+<tr>
+<td>device.audio.download</td>
+<td>需要</td>
+<td>下载录音</td>
+</tr>
+<tr>
+<td>device.audio.play</td>
+<td>需要</td>
+<td>播放录音</td>
+</tr>
+<tr>
+<td>device.audio.pause</td>
+<td>需要</td>
+<td>录音播放暂停</td>
+</tr>
+<tr>
+<td>device.audio.resume</td>
+<td>需要</td>
+<td>录音播放恢复</td>
+</tr>
+<tr>
+<td>device.audio.stop</td>
+<td>需要</td>
+<td>录音播放停止</td>
+</tr>
+<tr>
+<td>device.audio.onPlayEnd</td>
+<td>需要</td>
+<td>录音播放停止</td>
+</tr>
+<tr>
+<td>device.audio.translateVoice</td>
+<td>需要</td>
+<td>语音转文字</td>
+</tr>
+<tr>
+<td>biz.util.fetchImageData</td>
+<td>需要</td>
+<td>获取文件base64数据</td>
+</tr>
+<tr>
+<td>biz.alipay.auth</td>
+<td>需要</td>
+<td>支付接口授权</td>
+</tr>
+<tr>
+<td>biz.alipay.pay</td>
+<td>需要</td>
+<td>支付接口支付</td>
+</tr>
+<tr>
+<td>device.nfc.nfcWrite</td>
+<td>需要</td>
+<td>NFC数据写入</td>
+</tr>
+<tr>
+<td>biz.util.encrypt</td>
+<td>需要</td>
+<td>数据加密</td>
+</tr>
+<tr>
+<td>biz.util.decrypt</td>
+<td>需要</td>
+<td>数据揭秘</td>
+</tr>
+<tr>
+<td>runtime.permission.requestOperateAuthCode</td>
+<td>需要</td>
+<td>获取发送响应式消息Code</td>
+</tr>
+<tr>
+<td>biz.util.scanCard</td>
+<td>需要</td>
+<td>扫名片</td>
+</tr>
+</tbody>
+</table>
+<p>API参数详情, <a href="https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.kWPs2c&amp;treeId=171&amp;articleId=104911&amp;docType=1" target="_blank" rel="external">点我查看</a>.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/08/15/JavaScript之正则表达式入门-基本特性与应用案例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2193,278 +2983,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/05/07/works/Web前端面试总结-2017-05/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/07/works/Web前端面试总结-2017-05/" itemprop="url">
-                  Web前端面试总结_2017.07
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-07T22:31:31+08:00">
-                2017-05-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/works/" itemprop="url" rel="index">
-                    <span itemprop="name">works</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>原文链接: <a href="https://github.com/Xing-Chuan/blog/blob/master/works/Web前端面试总结-2017-05.md" target="_blank" rel="external">https://github.com/Xing-Chuan/blog/blob/master/works/Web前端面试总结-2017-05.md</a></p>
-<p>面试告一段落, 把自己的面试体验整理一下, 给各位提供一下备战的思路.</p>
-<p>声明: 以下皆是个人观点, 仅供参考之用.</p>
-<h2 id="简历投递"><a href="#简历投递" class="headerlink" title="简历投递"></a>简历投递</h2><p>前期为了解自身短板, 可以海投一些试试. 不建议长期海投简历,<br>对用人单位简历筛选和你自身都没什么好处.<br>投简历之前最起码要关注以下几点(薪资范围, 公司位置, 职位要求, 是否为培训机构冒充招聘).</p>
-<h2 id="前端职位类型"><a href="#前端职位类型" class="headerlink" title="前端职位类型"></a>前端职位类型</h2><p>现在前端招人分的挺细了, 下面是我印象中几种职位.</p>
-<ul>
-<li>Web 前端开发工程师 (页面重构方面和JS逻辑方面)</li>
-<li>HTML5 前端开发工程师 (一般都是移动端或者 canvas 做游戏)</li>
-<li>WebGL 前端开发工程师 (这是数据可视化的, 三维实时展现数据)</li>
-<li>APP 前端开发工程师 (应该混合 App 开发、RN 都算这里面)</li>
-<li>微信小程序、公众号开发 前端开发工程师 (我是不准备选, 可能小公司会专门找人做这个)</li>
-<li>PHP/JAVA 前端开发工程师 (公司可能前后端没有完全分离)</li>
-<li>React 前端开发工程师 (做大项目的居多, 业务逻辑复杂)</li>
-<li>Nodejs 工程师 (写服务端的, Node 处理高并发很优秀, CNode 社区很多招的)</li>
-</ul>
-<h2 id="公司类型"><a href="#公司类型" class="headerlink" title="公司类型"></a>公司类型</h2><p>每个公司的技术栈是不同的, 招人也会倾向于你简历的技术栈.</p>
-<ul>
-<li>稳健型 使用 jQuery 等历史悠久类库, 一般不用 3 大框架, 重视 JQuery, JS, HTML + CSS 基础和实际效果实现</li>
-<li>潮流型 普遍大公司或者中小型公司, 会使用 Angular, Vue, React 等框架, 会问框架的具体使用和下面我写的那些东西, 原理偏多,很少问 jQuery.</li>
-<li>基础型 页面重构&amp;效果呈现, CSS3 + HTML5, 基础 JS 能力, 招你可能就是写页面或者活动页之类的</li>
-<li>偏门型 招你专做小程序&amp;微信相关东西, 或者WebGL,D3之类的做数据化展示,比较高深,恩..</li>
-<li>疯癫型 不知所云, 把面试当公司宣传活动或者拿面试题打击你, 我没遇到过, 有人遇到过, 是我的话, 离远点, 只是个人建议.</li>
-</ul>
-<p>不管到哪里, 基础都很重要, 恩, 随机应变也很重要.</p>
-<h2 id="面试官考教流程"><a href="#面试官考教流程" class="headerlink" title="面试官考教流程"></a>面试官考教流程</h2><ul>
-<li>你的笔试题, 根据其做延伸.</li>
-<li>你的简历, 技术栈、工作外学习情况、项目经验. 第一页很重要, 最好都能掌握, 有亮点更好.</li>
-<li>面试官额外的延展的知识点, 随机问,看你运气和积累(一般会提及到 ES6、解决实际问题的方法、数据结构与算法都有可能).</li>
-</ul>
-<h3 id="应对"><a href="#应对" class="headerlink" title="应对"></a>应对</h3><ul>
-<li>刷题, 各种基础题会帮你快速回忆起来, 比你看书快, 如果基础不好的话, 看书好好学学吧.</li>
-<li>简历上自己写的东西, 要能说出来.</li>
-<li>积累, 每次面试不成功就回来填坑吧, 还是有掌握不到位的. 我觉得能坚持下来的话, 找工作只是时间问题.</li>
-</ul>
-<h2 id="面试着重点分类"><a href="#面试着重点分类" class="headerlink" title="面试着重点分类"></a>面试着重点分类</h2><p>根据公司业务不同, 着重点不一样, 公司能把你简历挑出来, 就说明有用人单位感兴趣的部分.</p>
-<ul>
-<li>可能你写的是 <code>熟练使用 Vue</code>, 公司也是这个技术栈.</li>
-<li>可能你知识写的全面, 公司想面面你实际掌握怎么样.</li>
-<li>可能你项目写的贴合用人单位需要, 比如都是做后台管理的.</li>
-</ul>
-<h3 id="框架问题-Vue-举例-3框架实质问题差不多-具体有些差异"><a href="#框架问题-Vue-举例-3框架实质问题差不多-具体有些差异" class="headerlink" title="框架问题: (Vue 举例, 3框架实质问题差不多, 具体有些差异)"></a>框架问题: (Vue 举例, 3框架实质问题差不多, 具体有些差异)</h3><ul>
-<li>封装过哪些组件?有自己写过 UI 组件吗?</li>
-<li>什么是 MVVM , 和 MVC 是什么区别, 原理是什么?</li>
-<li>父子组件怎么通信的?</li>
-<li>兄弟组件怎么通信的?</li>
-<li>生命周期有哪些, 怎么用?</li>
-<li>Vue 全家桶都用过哪些?具体怎么用?</li>
-</ul>
-<h3 id="HTML5-CSS3"><a href="#HTML5-CSS3" class="headerlink" title="HTML5 + CSS3"></a>HTML5 + CSS3</h3><ul>
-<li>盒子模型</li>
-<li>如何给未知宽高的图片垂直居中对齐? 有几种方法?</li>
-<li>移动端的 rem 布局.</li>
-<li>前端可以做哪些优化, 或问你 SEO, 基本都问.</li>
-<li>清除浮动方式和原理, 基本都问. 几种方式? 原理? 为什么要用伪元素? 具体代码怎么写,为什么这么写?</li>
-<li>清除浮动就会涉及到 BFC 的问题.</li>
-<li>给你实际页面例子, 让你口述布局或手写实现细节, 可以使用几种方法, 怎么写兼容性好, 拓展性好.</li>
-<li>具体 API 哪个 CSS 版本的?</li>
-<li>CSS3 新增了哪些 API?</li>
-<li>可能问你哪些 API 是 CSS 哪个版本的? 兼容性怎么样.</li>
-<li>CSS hack 是什么? 包含什么? 怎么处理兼容性问题?</li>
-<li>HTML5 新增了哪些 API? 哪些比较常用? 用来做什么? 实际怎么用?</li>
-<li>cookie, session, localStrorage, sessionStorage 区别, 具体怎么用代码去操作? </li>
-</ul>
-<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><ul>
-<li>变量声明提升的问题.</li>
-<li>闭包的原理, 闭包的各种题, 基本都问.</li>
-<li>DOM2 事件流, 冒泡和捕获问题?</li>
-<li>this 指向问题, 一般都是在笔试题里, 拿着问你, 问的比较多.</li>
-<li>call 和 apply 区别? 有的还会加问 bind?</li>
-<li>jQuery 获取复选框选中状态, 为什么要用 prop 方法?</li>
-<li>面向对象编程中的继承问题, 原型链问题在笔试题里比较常见.</li>
-<li>jQuery API , 各种操作 DOM 用法, 还有一些新的 API, 这种在不用 3 大框架的公司会问的很详细.</li>
-<li>可能有些考算法结构的, 可以了解一下, 一般前端掌握的很少.</li>
-<li>Ajax 基本都问, 问的细节可能不同, 比如 get 和 post 有什么区别?</li>
-<li>数组的方法 - es6 以下基本都能熟练使用, 应该会加分不少</li>
-<li>字符串的方法 - 拼接, 截取, 带些正则</li>
-<li>数组去重问的挺多的(解法很多, ES6 有很多简短写法)</li>
-<li>ES6 的 Promise , 很多都会问. 如果公司用框架或者你写了, 还会问你 Class.</li>
-<li>var, let, const区别, 问的多.</li>
-<li>栈和队列结构, 有的会问.</li>
-<li>跨域问题: 同源策略, 解决方案, 解决原理(比如 jsonp 的原理), 这里都是高发区.</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>url 解析过程.</li>
-<li>缓存的原理.</li>
-<li>TCP 3次握手.</li>
-<li>HTTP 协议.</li>
-<li>看过哪些技术书籍? 可能直接问你书里的东西, 个人觉得至少 2 本以上储备量吧.</li>
-</ul>
-<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><p>问你用过什么技术, 用过哪些插件解决什么问题之类的, 了解一下你的技术栈.</p>
-<p>那些开发用的插件和技术名词最好回想, 整理一下, 不要面试的时候蒙了.</p>
-<ul>
-<li>负责什么模块?</li>
-<li>使用到的技术?</li>
-<li>遇到过什么难题?</li>
-<li>怎么解决的?</li>
-<li>工作之外的学习情况? 一般会从侧面了解一下</li>
-</ul>
-<h3 id="技术部门架构"><a href="#技术部门架构" class="headerlink" title="技术部门架构"></a>技术部门架构</h3><ol>
-<li>按照业务线来划分部门, 每个部门配置(运营, 产品, UI, 前端, 服务端, 安卓, ios), 工作效率高, 前端 1-4 人或更多都有可能, 看业务量.</li>
-<li>按照技术种类划分部门, 交流成本较高.</li>
-<li>恩, 还有可能前端只有 1 或 2 人.</li>
-</ol>
-<p>技术人员配置主要还是看公司业务量的多寡, 和公司产品类型.</p>
-<h3 id="开发平台"><a href="#开发平台" class="headerlink" title="开发平台"></a>开发平台</h3><p>很久没更新了, 今天说说工作中的开发平台.</p>
-<p>如果开发的是 App ,那我们针对的是某一个版本号的开发. 推陈出新需要一个过程, 所以就有开发平台这种流程出现.</p>
-<p>一个版本从需求讨论, 一直到开发完成上线, 大致经过以下几个过程.</p>
-<ol>
-<li>需求讨论(技术可行性, 时间需求等)</li>
-<li>需求讲解(产品告诉技术我们这次需要多什么)</li>
-<li>前后端约定接口形式(一般都有通用形式的要求, 但具体参数和返回值需要具体商议)</li>
-<li>前端, 后端, 客户端分别开发</li>
-<li>前后端联调(测试交互功能)</li>
-<li>提测(交于QA测试功能)</li>
-<li>QA测试(禅道等bug管理平台, bug 指向人修改 bug)</li>
-<li>预上线(模拟真实线上环境)</li>
-<li>上线(预上线一切正常就可以上线了)</li>
-</ol>
-<p>这其中涉及到几处环境:</p>
-<ul>
-<li>研发环境</li>
-<li>测试环境</li>
-<li>预上线环境</li>
-<li>线上环境</li>
-</ul>
-<p>想理解几套环境的差异, 需要了解 host 这个概念.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">127.0.0.1 www.baidu.com 指向本地</div><div class="line">10.10.10.111 www.baidu.com 指向局域网服务器</div><div class="line">45.23.26.23 www.baidu.com 指向网络独立IP</div></pre></td></tr></table></figure>
-<p>host 可以改变域名指向的服务器 IP 地址, 线上的各种网站也是需要在域名控制台配置域名指向的, 所以你想办网站, 不只是要有域名, 还要有一台拥有独立 IP 地址的服务器.</p>
-<p>我们通过切换 host 的指向, 改变资源(js,css,images)的指向, 可以自由切换到不同的服务器上去, 基于这一点, 形成开发平台的概念.</p>
-<p>想看网上域名指向何处, 可以搜一下关键词 <code>ping</code></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2514,7 +3032,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">43</span>
+                <span class="site-state-item-count">44</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2525,7 +3043,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -2536,7 +3054,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">60</span>
+                <span class="site-state-item-count">64</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
