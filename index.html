@@ -406,32 +406,6 @@
             <p>元素的垂直居中是大家常关注的问题, 今天整理一下元素垂直居中的几种方式.</p>
 <p>html结构如下:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<style type="text/css">
-  #div1 {
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    border: 1px dotted #ccc;
-/*     display: table-cell;
-    vertical-align: middle; */
-/*     display: flex;
-    justify-content: center;
-    align-items: center;
- */
-    position: relative;
-  }
-  #div2 {
-    /* display: inline-block; */
-    width: 200px;
-    height: 200px;
-    background: #3BD9CD;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-</style>
-
 <h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">display</span>: table-cell;</div><div class="line">  <span class="attribute">vertical-align</span>: middle;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>display: table-cell 单元格居中</p>
 <h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">justify-content</span>: center;</div><div class="line">  <span class="attribute">align-items</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
