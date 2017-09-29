@@ -304,6 +304,185 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/09/29/HTML&CSS/元素垂直居中的几种方式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="纪行川">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行川草庐">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/09/29/HTML&CSS/元素垂直居中的几种方式/" itemprop="url">
+                  元素垂直居中的几种方式
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-29T10:45:52+08:00">
+                2017-09-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>元素的垂直居中是大家常关注的问题, 今天整理一下元素垂直居中的几种方式.</p>
+<p>html结构如下:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<style type="text/css">
+  #div1 {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 1px dotted #ccc;
+/*     display: table-cell;
+    vertical-align: middle; */
+/*     display: flex;
+    justify-content: center;
+    align-items: center;
+ */
+    position: relative;
+  }
+  #div2 {
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    background: #3BD9CD;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">display</span>: table-cell;</div><div class="line">  <span class="attribute">vertical-align</span>: middle;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>display: table-cell 单元格居中</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">justify-content</span>: center;</div><div class="line">  <span class="attribute">align-items</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>弹性布局, x, y轴居中</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, -50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这里的 transform 位置变换也可以用 margin 负值 50% 来位移.</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#div1</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</div><div class="line">  <span class="attribute">text-align</span>: center;</div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> dotted <span class="number">#ccc</span>;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#div2</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#3BD9CD</span>;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">margin</span>: auto;</div><div class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>需要设置宽高, 两侧自动填充.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/08/18/report/钉钉微应用开发调研报告/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2369,234 +2548,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.jixingchuan.com/2017/05/09/works/nodetpl模版引擎使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="纪行川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="行川草庐">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/09/works/nodetpl模版引擎使用/" itemprop="url">
-                  nodetpl模版引擎使用
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T22:23:46+08:00">
-                2017-05-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/works/" itemprop="url" rel="index">
-                    <span itemprop="name">works</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="nodetpl-关键字"><a href="#nodetpl-关键字" class="headerlink" title="nodetpl 关键字"></a>nodetpl 关键字</h2><ul>
-<li>&lt;? ?&gt; nodetpl 定界符</li>
-<li>$ROOT 模版中 HTML 代码需要包裹在 id 为 $ROOT 的元素中</li>
-<li>ROOT 在 script 标签中使用, 相当于 document.getElementById(‘$ROOT’)</li>
-<li>$SUBROOT 多模版, 子模版 HTML 用 id 为 $SUBROOT 的元素包裹</li>
-<li>SUBROOT 多模版, 在子模版 script 标签内使用.</li>
-<li>$DATA 传入模版中的数据挂载在 $DATA 下</li>
-<li>= 纯文本渲染, 放 XSS</li>
-<li>== HTML, JS 代码会实际渲染</li>
-<li>include 引入 tpl 模版</li>
-<li>template 多模版, 单模版用 template包裹</li>
-<li>main 多模版, 主模版需设置 name=”main”</li>
-<li>nodetpl.config 配置</li>
-<li>nodetpl.get 渲染, 可指定 url</li>
-<li>nodetpl.render 渲染模版代码, 一般手动拼接</li>
-<li>nodetpl.exec 执行模版中的 js 代码</li>
-<li>–extname 拓展名, 默认 .tpl</li>
-<li>–encoding 预编译指定编码</li>
-<li>–watch 预编译实时监视</li>
-<li>–nostrict 预编译不使用严格模式</li>
-</ul>
-<h2 id="起步-Demo"><a href="#起步-Demo" class="headerlink" title="起步 Demo"></a>起步 Demo</h2><h3 id="引入文件"><a href="#引入文件" class="headerlink" title="引入文件"></a>引入文件</h3><ul>
-<li>script 标签引入</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/nodetpl.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>require 模块化引入</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> nodetpl = <span class="built_in">require</span>(<span class="string">'nodetpl'</span>);</div></pre></td></tr></table></figure>
-<h3 id="创建模版"><a href="#创建模版" class="headerlink" title="创建模版"></a>创建模版</h3><p>创建 <code>tpl/test.tpl</code></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&lt;?=@title?&gt;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  &lt;?for (var i=0; i&lt;@favor.length); i++?) &#123;&gt;</div><div class="line">    &lt;li&gt;&lt;?=@favor[i]?&gt;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  &lt;?&#125;?&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h3><p>nodetpl.get 与 nodetpl.render 需要使用 Nginx 或 Apache 代理.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">  <span class="string">"title"</span>: <span class="string">"个人爱好"</span>,</div><div class="line">  <span class="string">"favor"</span>: [<span class="string">"足球"</span>, <span class="string">"篮球"</span>, <span class="string">"乒乓球"</span>, <span class="string">"琉璃球"</span>]</div><div class="line">&#125;;</div><div class="line">nodetpl.get(<span class="string">'tpls/test.tpl'</span>, data, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(d);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="执行结果"><a href="#执行结果" class="headerlink" title="执行结果"></a>执行结果</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>个人爱好<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>足球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>篮球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>乒乓球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>琉璃球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="nodetpl-API"><a href="#nodetpl-API" class="headerlink" title="nodetpl API"></a>nodetpl API</h2><ul>
-<li>nodetpl.config 基本配置, 一般使用默认</li>
-<li>nodetpl.get 获取模版或者编译后的模版文件</li>
-<li>nodetpl.render 渲染某个文件</li>
-<li>nodetpl.exec 执行模版里面的 js 代码</li>
-</ul>
-<h3 id="API-参数"><a href="#API-参数" class="headerlink" title="API 参数"></a>API 参数</h3><ol>
-<li>nodetpl.config(options)</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">nodetpl.config(&#123;</div><div class="line">  <span class="attr">base</span>: <span class="string">'http://www.nodetpl.com/static/tpl/'</span>,   <span class="comment">// 强制指定模板根目录</span></div><div class="line">  openTag: <span class="string">'&lt;?'</span>,</div><div class="line">  <span class="attr">closeTag</span>: <span class="string">'?&gt;'</span>,</div><div class="line">  <span class="attr">strict</span>: <span class="literal">true</span>,</div><div class="line">  <span class="attr">map</span>: <span class="function"><span class="keyword">function</span>(<span class="params">str</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> str;</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">beforeCompile</span>: <span class="function"><span class="keyword">function</span>(<span class="params">html</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> html;</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">afterCompile</span>: <span class="function"><span class="keyword">function</span>(<span class="params">html</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> html;</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>base：模板所在的根路径，可以省略。若配置该参数，则使用 .get() 方法填写的路径会相对于该路径进行查找</li>
-<li>openTag：模板定界符开始标签，默认为：&lt;?</li>
-<li>closeTag：模板定界符结束标签，默认为：?&gt;</li>
-<li>strict：是否开启严格模式，默认开启</li>
-<li>map：传递一个解析函数（转换器），用来解析其他语法，例如 php、jsp 等</li>
-<li>beforeCompile：编译前的处理函数</li>
-<li>afterCompile：编译后的处理函数</li>
-</ul>
-<ol>
-<li>nodetpl.get(url, [data, ] callback)</li>
-</ol>
-<ul>
-<li>url 模版文件地址</li>
-<li>data 传入的数据, 值为 false 则暂缓渲染, 传入 NodeTplClass 实例作为 callback 的参数, 需要渲染时, 使用 tpl.render(data).</li>
-<li>callback 接收渲染后的 html 作为参数</li>
-</ul>
-<ol>
-<li>nodetpl.render(tplcontent[, data][, callback]);</li>
-</ol>
-<ul>
-<li>tplcontent 需要渲染的 HTML 结构</li>
-<li>data 传入的数据</li>
-<li>callback 接收渲染后的 HTML 结构为参数</li>
-</ul>
-<ol>
-<li>nodetpl.exec(content);</li>
-</ol>
-<ul>
-<li>执行 HTML 结构中的 JavaScript 代码.</li>
-</ul>
-<h2 id="nodetpl-预编译"><a href="#nodetpl-预编译" class="headerlink" title="nodetpl 预编译"></a>nodetpl 预编译</h2><p>需要安装 node 模块: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -g nodetpl</div></pre></td></tr></table></figure>
-<p>使用语法:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nodetpl &lt;path&gt; --extname &lt;extname&gt; --encoding &lt;encoding&gt; --nostrict --watch</div></pre></td></tr></table></figure>
-<ul>
-<li><code>&lt;path&gt;</code>：必选，模板文件的路径，或模板所在的目录路径</li>
-<li><code>--extname</code>：可选，模板文件的扩展名，默认为 .tpl</li>
-<li><code>--encoding</code>：可选，模板的编码格式，默认为 utf-8，可选值：utf-8、gbk</li>
-<li><code>--nostrict</code>：可选，启用非 strict 模式，不推荐传递该参数</li>
-<li><code>--watch</code>：可选，是否监控文件变化，默认为 false，当传递该参数时，修改模板内容会同步自动编译</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -2646,7 +2597,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">44</span>
+                <span class="site-state-item-count">45</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2668,7 +2619,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">64</span>
+                <span class="site-state-item-count">65</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
